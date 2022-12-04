@@ -1,1 +1,90 @@
-﻿
+﻿/* common */
+img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    margin: 5rem 0;
+}
+
+.header {
+    font-size: 18px;
+}
+
+    .header h1 {
+        font-size: 64px;
+    }
+
+    .header .row > div:last-child {
+        padding-left: 2rem;
+    }
+
+/* main */
+
+.text-right,
+.text-left {
+    gap: 70px;
+    font-size: 18px;
+    margin-bottom: 6rem;
+}
+
+.text {
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+.name {
+    font-size: 42px;
+}
+
+@media screen and (max-width: 768px) {
+    /* common */
+    section {
+        margin: 3rem 0;
+    }
+
+    .header {
+        font-size: 12px;
+    }
+
+        .header h1 {
+            font-size: 26px;
+        }
+
+        .header .row > div:last-child {
+            padding: 0 10px;
+        }
+
+    /* common */
+    .hide-mobile {
+        display: none;
+    }
+
+    .text-right {
+        flex-direction: column;
+    }
+
+    .text-left {
+        flex-direction: column-reverse;
+    }
+
+    .text-right,
+    .text-left {
+        gap: 30px;
+        margin-bottom: 3.5rem;
+    }
+
+    .text {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    .number {
+        font-size: 8px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}

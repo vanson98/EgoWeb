@@ -1,1 +1,55 @@
-﻿
+﻿/* common */
+img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    font-size: 18px;
+    margin: 5rem 0;
+}
+
+.header h1 {
+    font-size: 64px;
+}
+
+/* common */
+
+.title {
+    margin-bottom: 1.5rem;
+}
+
+.box {
+    margin-bottom: 4rem;
+}
+
+    .box .name {
+        font-size: 42px;
+    }
+
+@media screen and (max-width: 768px) {
+    /* common */
+    section {
+        font-size: 12px;
+        margin: 3rem 0;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    /* common */
+    .box {
+        margin-bottom: 3rem;
+    }
+
+    .title {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+
+    .box .name {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
