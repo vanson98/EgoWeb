@@ -17,10 +17,6 @@ namespace TLS.Web.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            ViewBag.Email = _configuration["Email"];
-            ViewBag.Phone = _configuration["Phone"];
-            ViewBag.Zalo = _configuration["Zalo"];
-            ViewBag.Address = _configuration["Address"];
             return View();
         }
     }

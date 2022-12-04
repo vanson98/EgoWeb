@@ -81,7 +81,59 @@ ul {
     border-radius: 20px;
 }
 
+
+/* footer */
+.footer {
+    padding: 4rem 0;
+    font-size: 22px;
+    overflow-x: hidden;
+}
+
+    .footer .h2 {
+        font-size: 98px;
+    }
+
+    .footer .title {
+        font-size: 42px;
+    }
+
+.link-redirect {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: var(--primary-color);
+}
+
+    .link-redirect img {
+        display: block;
+        transform: rotate(270deg);
+    }
+
 @media screen and (max-width: 1160px) {
+    /* footer */
+    .footer .h2 {
+        font-size: 26px;
+    }
+
+    .footer {
+        padding: 2rem 20px;
+        font-size: 12px;
+    }
+
+        .footer .h2 {
+            font-size: 24px;
+        }
+
+        .footer .title {
+            font-size: 18px;
+        }
+
+    .link-redirect {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -96,4 +148,6 @@ ul {
     .logo-ego img {
         width: 80px;
     }
+
+
 }
