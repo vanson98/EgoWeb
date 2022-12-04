@@ -18,7 +18,8 @@ namespace TLS.Service.Mapping
 
         private void MappingEntityToViewModel()
         {
-
+            CreateMap<News, EditNewsViewModel>()
+                  .ForMember(d => d.ThumbNailImageUrl, cf => cf.MapFrom(s => $"/{AppConsts.NEWS_IMAGE_FOLDER_NAME}/{s.ImageFileName}"));
         }
 
         private void MappingViewModelToEntity()

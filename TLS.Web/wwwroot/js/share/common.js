@@ -30,7 +30,6 @@
 const initTinymce = function (selector) {
     tinymce.init({
         selector: selector,
-        height: 550,
         width: '100%',
         plugins: [
             'advlist autolink lists link image charmap print preview hr anchor pagebreak',
@@ -70,6 +69,7 @@ const initTinymce = function (selector) {
                 position: 'node',
                 scope: 'node'
             });
+           
         }
     })
 }
@@ -87,7 +87,8 @@ function openCropImageModal(e,aspectratio) {
     // init croper
     cropper = new Cropper($("#upload-img")[0], {
         aspectRatio: aspectratio,
-        autoCropArea: 1,
+        autoCropArea: 0,
+        zoomable: false
     });
 }
 

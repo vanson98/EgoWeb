@@ -34,6 +34,24 @@ namespace TLS.Web.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAllPaging()
+        {
+            int pageIndex = Convert.ToInt32(Request.Query["start"]);
+            int pageSize = Convert.ToInt32(Request.Query["length"]);
+            string searchValue = Request.Query["search[value]"];
+
+
+            var news = await _newsService.GetAllPaging(new GetAllNewsPageRequest()
+            {
+                Keyword = searchValue,
+                StartIndex = pageIndex,
+                PageSize = pageSize,
+                Draw = Convert.ToInt32(Request.Query["draw"])
+            });
+
+            return Json(news);
+        }
 
         public IActionResult Create()
         {
@@ -45,6 +63,24 @@ namespace TLS.Web.Controllers
         {
             var result = await _newsService.Create(input);
             return Json(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditAsync(int id)
+        {
+            var news = await _newsService.GetByIdAsync(id);
+            var modal = _mapper.Map<EditNewsViewModel>(news);
+
+            return View(modal);
+        }
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit([FromForm] EditNewInputDto input)
+        {
+            var reuslt = await _newsService.Edit(input);
+            return Json(reuslt);
         }
 
     }

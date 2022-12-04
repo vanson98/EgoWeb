@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using TLS.Common.Enums;
 
 namespace TLS.ViewModels.News
 {
-    public class CreateNewsInputDto
+    public class EditNewsViewModel
     {
+        public int Id { get; set; }
         public string Title { get; set; }
 
         public string MetaKeyWord { get; set; }
@@ -18,9 +18,9 @@ namespace TLS.ViewModels.News
         public string ShortDescription { get; set; }
         public string Content { get; set; }
         public string Author { get; set; }
-        public string Tags { get;set; }
+        public string Tags { get; set; }
 
-        public IFormFile ImageFile { get; set; }
+        public string ThumbNailImageUrl { get; set; }
         public string ImageTitle { get; set; }
     }
 }

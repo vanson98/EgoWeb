@@ -361,9 +361,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\fonts\" />
-    <Folder Include="wwwroot\js\cms\" />
     <Folder Include="wwwroot\js\public\" />
     <Folder Include="wwwroot\uploads\" />
     <Folder Include="wwwroot\uploads\" />

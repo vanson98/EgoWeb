@@ -26,6 +26,6 @@ namespace TLS.DataProvider.Entities
         public bool IsPublish { get; set; }
         public string Author { get; set; }
         public DateTime CreatedDate { get; set; }
-        public NewsType Type { get; set; }
+        public string Tags { get; set; }
     }
 }
