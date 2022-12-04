@@ -83,5 +83,12 @@ namespace TLS.Web.Controllers
             return Json(reuslt);
         }
 
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _newsService.Delete(id);
+            return Json(result);
+        }
+
     }
 }

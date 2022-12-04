@@ -39,7 +39,7 @@ namespace TLS
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
            
             // DbContext
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
             // Identity
             services.AddIdentity<AppUser,AppRole>()

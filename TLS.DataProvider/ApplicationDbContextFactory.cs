@@ -20,7 +20,7 @@ namespace TLS.DataProvider
             var connectionString = configuration.GetConnectionString("DefaultConnection");
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseMySql(connectionString);
 
             return new ApplicationDbContext(optionsBuilder.Options);
         }

@@ -10,6 +10,7 @@ namespace TLS.Service.NewsService
     public interface INewsService : IService<News>
     {
         Task<ApiResponseDto> Create(CreateNewsInputDto input);
+        Task<ApiResponseDto> Delete(int id);
         Task<ApiResponseDto> Edit(EditNewInputDto input);
         Task<DataTableResponse<NewsVm>> GetAllPaging(GetAllNewsPageRequest input);
     }

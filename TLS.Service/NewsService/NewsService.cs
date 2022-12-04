@@ -144,5 +144,27 @@ namespace TLS.Service.Catalog
             };
         }
 
+        public async Task<ApiResponseDto> Delete(int id)
+        {
+            var News = _repository.GetById(id);
+            if (News != null)
+            {
+                await _storageService.DeleteFileAsync(News.ImageFileName, AppConsts.NEWS_IMAGE_FOLDER_NAME);
+                await _repository.DeleteAsync(News);
+                return new ApiResponseDto()
+                {
+                    Code = 200,
+                    Message = "Xóa thành công"
+                };
+            }
+            else
+            {
+                return new ApiResponseDto()
+                {
+                    Code = 500,
+                    Message = "Xóa thất bại"
+                };
+            }
+        }
     }
 }

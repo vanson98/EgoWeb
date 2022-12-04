@@ -1,0 +1,99 @@
+﻿:root {
+    --primary-color: #2a32e3;
+    --white-color: #f1f1f1;
+    --black-color: #000;
+    --transition: 0.3s all linear;
+    --background-color: #0a0726;
+    --font-family: "Epilogue";
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    color: var(--white-color);
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.max-width {
+    margin: 0 auto;
+    padding: 0 80px;
+    max-width: 1440px;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+/* menu */
+.menu {
+    top: 15%;
+    left: 0;
+}
+
+    .menu ul {
+        padding: 0;
+    }
+
+        .menu ul li {
+            margin-bottom: 1rem;
+            list-style: none;
+        }
+
+            .menu ul li a {
+                font-size: 20px;
+                color: var(--white-color);
+            }
+
+    .menu a {
+        text-decoration: none;
+    }
+
+.switch-btn button {
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1160px) {
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .max-width {
+        padding: 0 20px;
+    }
+
+    .logo-ego img {
+        width: 80px;
+    }
+}
