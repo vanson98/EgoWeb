@@ -5,7 +5,7 @@ img {
 }
 
 section {
-    margin: 6rem 0;
+    margin: 4rem 0;
 }
 
 .header {
@@ -48,7 +48,7 @@ section {
 @media screen and (max-width: 768px) {
     /* common */
     section {
-        margin: 3rem 0;
+        margin: 2rem 0;
     }
 
     .header {
