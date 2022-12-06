@@ -23,14 +23,14 @@ namespace TLS.DataProvider
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.Entity<AppUser>().ToTable("AppUsers");
-            builder.Entity<AppRole>().ToTable("AppRoles");
+            builder.Entity<AppUser>().ToTable("appusers");
+            builder.Entity<AppRole>().ToTable("approles");
         }
 
-        public DbSet<AppUser> AppUsers { get; set; }
-        public DbSet<AppRole> AppRoles { get; set; }
-        public DbSet<Contact> Contacts  { get; set; }
-        public DbSet<News> News  { get; set; }
+        public DbSet<AppUser> appusers { get; set; }
+        public DbSet<AppRole> approles { get; set; }
+        public DbSet<Contact> contacts  { get; set; }
+        public DbSet<News> news  { get; set; }
        
 
     }

@@ -4,7 +4,7 @@ namespace TLS.Web.Controllers
 {
     public class MejarlCosmeticController : Controller
     {
-        [Route("/mejarl")]
+        [Route("/majarl-cosmetic")]
         [HttpGet]
         public IActionResult Index()
         {
