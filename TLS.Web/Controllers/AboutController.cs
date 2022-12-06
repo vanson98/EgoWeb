@@ -1,23 +1,27 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Localization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TLS.Web.Resources;
 
 namespace TLS.Web.Controllers
 {
     public class AboutController : Controller
     {
         private IConfiguration Configuration;
+        private readonly LocalizationService _localizationService;
 
-        public AboutController(IConfiguration configuration)
+        public AboutController(IConfiguration configuration, LocalizationService localizationService)
         {
             Configuration = configuration;
+            _localizationService = localizationService;
         }
 
-        [Route("/gioi-thieu")]
+        [Route("/about")]
         public IActionResult Index()
         {
             // SEO
@@ -29,7 +33,7 @@ namespace TLS.Web.Controllers
             ViewBag.SiteType = Configuration["SeoConfig:About:SiteType"];
             ViewBag.SiteImage = Configuration["SeoConfig:About:SiteImage"];
             // Data
-
+            var fullName = _localizationService.GetLocalizedString("Name");
             return View();
         }
     }

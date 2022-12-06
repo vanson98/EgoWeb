@@ -1,6 +1,13 @@
-﻿@section Headers{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Resources
+@inject LocalizationService LocalizationService
+@inject IViewLocalizer ViewLocalizer
+
+@section Headers{
     <link href="~/css/about.css" rel="stylesheet" />
+    <title>@ViewLocalizer["Title"]</title>
 }
+    <partial name="_SetLanguagePartial" />
     <div class="about-page">
         <section class="header">
             <div class="row max-width">

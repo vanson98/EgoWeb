@@ -20,7 +20,7 @@
         $('#uploadFileImageInput').change(onFileCroperChange);
         $('#save-crop-img-btn').on('click', () => getCropImge(croppedImage, '.cropped_img_preview'));
         $('#save_btn').on('click', onSave);
-        $('#open-crop-modal-btn').on('click', () => openCropImageModal(event, 438 / 302));
+        $('#open-crop-modal-btn').on('click', () => openCropImageModal(event, 964 / 643));
     }
 
     const initTagify = function () {

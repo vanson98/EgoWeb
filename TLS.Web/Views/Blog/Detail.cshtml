@@ -1,0 +1,63 @@
+﻿@using TLS.ViewModels.News
+@model NewsDetailVm
+@section Headers{
+    <link href="~/css/blog-detail.css" rel="stylesheet" />
+}
+    <div class="home-page relative">
+        <section class="logo-ego max-width d-flex justify-content-end">
+            <img src="~/EgoImages/logo.png" alt="" />
+        </section>
+
+        <section class="max-width banner relative">
+            <div class="menu absolute">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="/blogs">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="switch-btn">
+                    <button>ENG</button>
+                </div>
+            </div>
+
+            <div class="blog-content">
+                <div class="news-header">
+                    <div class="d-flex justify-content-between mb-5">
+                        <div>
+                            <a href="/blogs">Blogs</a> > <span>@Model.Title</span>
+                        </div>
+                        <div>
+                            <span>
+                                @Model.CreatedDate.ToLocalTime()
+                            </span>
+                        </div>
+                    </div>
+                    <h1 class="mb-4">
+                        @Model.Title
+                    </h1>
+                </div>
+                <div class="news-body">
+                    <p style="color:gray">@Model.ShortDescription</p>
+                    <div class="mt-4">@Html.Raw(Model.Content)</div>
+                </div>
+                <div class="news-footer mt-4">
+                    <div class="float-start">
+                    @foreach (var tag in Model.Tags)
+                    {
+                        <a href="@("/blogs?tag="+tag)" class="blog-tag">@tag</a>
+                    }
+                </div>
+
+                <strong class="float-end ">@Model.Author</strong>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+@section Scripts{
+    <script>
+
+    </script>
+    }

@@ -13,5 +13,7 @@ namespace TLS.Service.NewsService
         Task<ApiResponseDto> Delete(int id);
         Task<ApiResponseDto> Edit(EditNewInputDto input);
         Task<DataTableResponse<NewsVm>> GetAllPaging(GetAllNewsPageRequest input);
+        Task<NewsDetailVm> GetNewsDetailById(int newsId);
+        Task<NewsPageVm> GetNewsPageVm(SiteNewsPageRequest input);
     }
 }

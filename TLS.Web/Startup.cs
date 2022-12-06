@@ -5,12 +5,17 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 using Microsoft.Extensions.WebEncoders;
 using System;
+using System.Globalization;
+using System.Reflection;
 using System.Text.Encodings.Web;
 using System.Text.Unicode;
 using TLS.DataProvider;
@@ -21,6 +26,7 @@ using TLS.Service.Catalog;
 using TLS.Service.Common.Storage;
 using TLS.Service.Mapping;
 using TLS.Service.NewsService;
+using TLS.Web.Resources;
 
 namespace TLS
 {
@@ -36,13 +42,39 @@ namespace TLS
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
-           
+            // Localize
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddSingleton<LocalizationService>();
+            services.AddMvc()
+                .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization(options =>
+                {
+                    options.DataAnnotationLocalizerProvider = (type, factory) =>
+                    {
+                        var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
+                        return factory.Create("SharedResource", assemblyName.Name);
+                    };
+                });
+
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                var supportedCultures = new[]
+                {
+                    new CultureInfo("en"),
+                    new CultureInfo("vi")
+                };
+                options.DefaultRequestCulture = new RequestCulture("en");
+                options.SupportedCultures = supportedCultures;
+                options.SupportedUICultures = supportedCultures;
+            });
+
+            services.AddControllersWithViews();
+
             // DbContext
             services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
 
             // Identity
-            services.AddIdentity<AppUser,AppRole>()
+            services.AddIdentity<AppUser, AppRole>()
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders();
 
@@ -84,11 +116,25 @@ namespace TLS
             {
                 options.TextEncoderSettings = new TextEncoderSettings(UnicodeRanges.All);
             });
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //var supportedCultures = new[] { "en-US", "vi-VN" };
+
+            //var localizationOptions = new RequestLocalizationOptions()
+            //    .SetDefaultCulture(supportedCultures[0])
+            //    .AddSupportedCultures(supportedCultures)
+            //    .AddSupportedUICultures(supportedCultures);
+
+            //app.UseRequestLocalization(localizationOptions);
+
+            var requestLocalizationOptions = app.ApplicationServices.GetService<IOptions<RequestLocalizationOptions>>();
+            app.UseRequestLocalization(requestLocalizationOptions.Value);
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

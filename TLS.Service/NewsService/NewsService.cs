@@ -24,7 +24,7 @@ namespace TLS.Service.Catalog
         private readonly IMapper _mapper;
         private readonly IStorageService _storageService;
 
-        public NewsService(IRepository<News> baseReponsitory, IMapper mapper, IStorageService storageService,IConfiguration configuration) : base(baseReponsitory)
+        public NewsService(IRepository<News> baseReponsitory, IMapper mapper, IStorageService storageService, IConfiguration configuration) : base(baseReponsitory)
         {
             _repository = baseReponsitory;
             _mapper = mapper;
@@ -164,6 +164,66 @@ namespace TLS.Service.Catalog
                     Code = 500,
                     Message = "Xóa thất bại"
                 };
+            }
+        }
+
+
+        public async Task<NewsPageVm> GetNewsPageVm(SiteNewsPageRequest input)
+        {
+            var result = new NewsPageVm()
+            {
+                PageIndex = input.PageIndex,
+                PageSize = input.PageSize
+            };
+            string a = "tiếng anh, tư duy, thói quen";
+            var project = from n in _repository.GetAll()
+                          where (input.Tag == null || n.Tags.Contains(input.Tag.Trim())) && n.IsPublish
+                          select new
+                          {
+                              Id = n.Id,
+                              ImageName = n.ImageFileName,
+                              ImageTitle = n.ImageTitle,
+                              Title = n.Title,
+                              ShortDescription = n.ShortDescription,
+                          };
+            result.TotalRecords = project.Count();
+            result.Items = project
+                .Skip((input.PageIndex - 1) * input.PageSize)
+                .Take(input.PageSize)
+                .Select(p => new SiteNewsVm()
+                {
+                    ThumbNailImageLink = $"{AppConsts.NEWS_IMAGE_FOLDER_NAME}/{p.ImageName}",
+                    DetailLink = $"/blogs/{p.Title.GetSeoName()}-{p.Id}",
+                    ShortDescription = p.ShortDescription,
+                    Title = p.Title,
+                    ThumbNailImageTitle = p.ImageTitle
+                })
+                .ToList();
+
+            return result;
+        }
+
+        public async Task<NewsDetailVm> GetNewsDetailById(int newsId)
+        {
+            var news = await _repository.GetAll().FirstOrDefaultAsync((n) => n.Id == newsId);
+            if (news != null)
+            {
+                return new NewsDetailVm()
+                {
+                    Author = news.Author,
+                    Content = news.Content,
+                    CreatedDate = news.CreatedDate,
+                    MetaDescription = news.MetaDescription,
+                    MetaKeyWord = news.MetaKeyWord,
+                    MetaTitle = news.MetaTitle,
+                    ShortDescription = news.ShortDescription,
+                    Tags = news.Tags.Split(","),
+                    Title = news.Title
+                };
+            }
+            else
+            {
+                return null;
             }
         }
     }

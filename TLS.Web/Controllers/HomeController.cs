@@ -21,7 +21,7 @@ namespace TLS.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly INewsService _newsService;
         private IConfiguration Configuration;
-        public HomeController(ILogger<HomeController> logger, INewsService newsService,IConfiguration configuration)
+        public HomeController(ILogger<HomeController> logger, INewsService newsService, IConfiguration configuration)
         {
             _logger = logger;
             _newsService = newsService;
@@ -34,7 +34,12 @@ namespace TLS.Controllers
         {
             return View();
         }
-      
+
+        [Route("/not-found")]
+        public IActionResult NotFound()
+        {
+            return NotFound();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

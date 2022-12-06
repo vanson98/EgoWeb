@@ -32,8 +32,15 @@ section {
 .page-link {
     font-size: 18px;
     border: none;
-    color: var(--white-color);
-    background-color: transparent;
+    color: var(--white-color) !important;
+    background-color: transparent !important;
+}
+
+.short-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
 @media screen and (max-width: 768px) {

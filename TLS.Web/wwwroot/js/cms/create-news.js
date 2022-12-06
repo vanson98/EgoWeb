@@ -16,7 +16,7 @@
 
     // init event
     const initEvent = function () {
-        $('#open-crop-modal-btn').on('click', () => openCropImageModal(event, 438 / 302));
+        $('#open-crop-modal-btn').on('click', () => openCropImageModal(event, 964 / 643));
         $('#uploadFileImageInput').change(onFileCroperChange);
         $('#save-crop-img-btn').on('click', () => getCropImge(croppedImage, '.cropped_img_preview'));
 
@@ -33,15 +33,14 @@
 
     function onSave() {
         if (isFormValid()) {
-            debugger
             const formData = new FormData($('#page-form')[0]);
-            const formProps = Object.fromEntries(formData);
             formData.append('ImageFile', croppedImage.fileData);
             formData.append('ImageTitle', croppedImage.title == null ? '' : croppedImage.title);
             formData.set('Content', tinymce.activeEditor.getContent());
             formData.set('IsPublish', $('#isPublishCheckbox').is(':checked'));
             var newsTag = tagify.getCleanValue().map((tag) => tag.value).join(", ");
             formData.set('Tags', newsTag)
+            const formProps = Object.fromEntries(formData);
             $.ajax({
                 url: '/CmsNews/Create',
                 type: 'POST',
