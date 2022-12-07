@@ -38,7 +38,32 @@
 }
 
 .form-mobile {
-    display: none;
+    display: block;
+}
+
+    .form-mobile label {
+        margin-bottom: 0.2rem;
+    }
+
+    .form-mobile input {
+        width: 100%;
+        border-radius: 2px;
+        margin-bottom: 0.8rem;
+        border-color: transparent;
+    }
+
+.btn-submit {
+    width: 100px;
+    margin: 0 auto;
+}
+
+    .btn-submit input {
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+
+.link-redirect.link-redirect-hide {
+    margin: 3rem 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -53,10 +78,6 @@
         font-size: 64px;
     }
 
-    .scrolling {
-        height: 98px;
-    }
-
     .contact-page .address {
         font-size: 30px;
         margin: 2rem 0;
@@ -65,29 +86,4 @@
     .link-redirect-hide {
         display: none;
     }
-
-    .form-mobile {
-        display: block;
-    }
-
-        .form-mobile label {
-            margin-bottom: 0.2rem;
-        }
-
-        .form-mobile input {
-            width: 100%;
-            border-radius: 2px;
-            margin-bottom: 0.8rem;
-            border-color: transparent;
-        }
-
-    .btn-submit {
-        width: 100px;
-        margin: 0 auto;
-    }
-
-        .btn-submit input {
-            color: #fff;
-            background-color: var(--primary-color);
-        }
 }
