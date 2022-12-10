@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Models
 @inject IViewLocalizer ViewLocalizer
 @section Headers{
     <link href="~/css/esa-english.css" rel="stylesheet" />
@@ -152,11 +153,14 @@
             </div>
         </section>
         <div class="max-width">
-            <partial name="_PageNavigation" />
+            @await Html.PartialAsync("_PageNavigation",new NavigationModel(){
+        NextPagePath = "/",
+        PreviousPagePath = "/About"
+        })
         </div>
     </div>
 
-@section Scripts{
+    @section Scripts{
     <scirpt>
 
     </scirpt>

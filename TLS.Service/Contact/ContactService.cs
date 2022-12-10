@@ -25,13 +25,11 @@ namespace TLS.Service.Catalog
             var contact = _repository.GetAll();
             var searchKeyWord = input.Keyword != null ? input.Keyword.ToLower() : "";
             var contactFilter = from n in contact
-                             where string.IsNullOrEmpty(input.Keyword) ||
-                             n.Name.ToLower().Contains(searchKeyWord) ||
-                             n.Email.ToLower().Contains(searchKeyWord) ||
-                             n.PhoneNumber.ToLower().Contains(searchKeyWord) ||
-                             n.Subject.ToLower().Contains(searchKeyWord)
-                             orderby n.CreatedDate descending
-                             select n;
+                                where string.IsNullOrEmpty(input.Keyword) ||
+                                n.Name.ToLower().Contains(searchKeyWord) ||
+                                n.PhoneNumber.ToLower().Contains(searchKeyWord)
+                                orderby n.CreatedDate descending
+                                select n;
 
             var contactPaging = await contactFilter.Skip(input.StartIndex)
                                          .Take(input.PageSize)
@@ -39,11 +37,10 @@ namespace TLS.Service.Catalog
                                          {
                                              Id = x.Id,
                                              CreatedDate = x.CreatedDate.ToString("dd/MM/yyyy"),
-                                             Subject = x.Subject,
-                                             Content = x.Content,
-                                             Email = x.Email,
                                              Name = x.Name,
-                                             PhoneNumber = x.PhoneNumber
+                                             BusinessAreas = x.BusinessAreas,
+                                             PhoneNumber = x.PhoneNumber,
+
                                          })
                                          .ToListAsync();
 
@@ -60,5 +57,6 @@ namespace TLS.Service.Catalog
                 recordsTotal = await contact.CountAsync()
             };
         }
+
     }
 }
