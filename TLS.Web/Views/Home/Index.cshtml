@@ -14,10 +14,57 @@
                     @ViewLocalizer["home1"]
                 </p>
 
-                <h1>
-                    We're <span>elementy creative</span>
-                    digital marketing
-                </h1>
+                <div class="h1-wrapper">
+                    <h1>We're</h1>
+                    <div class="text-gsap">
+                        <div class="d-flex">
+                            <div class="char">e</div>
+                            <div class="char">l</div>
+                            <div class="char">e</div>
+                            <div class="char">m</div>
+                            <div class="char">e</div>
+                            <div class="char">n</div>
+                            <div class="char">t</div>
+                            <div class="char">y</div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="char">e</div>
+                            <div class="char">l</div>
+                            <div class="char">e</div>
+                            <div class="char">m</div>
+                            <div class="char">e</div>
+                            <div class="char">n</div>
+                            <div class="char">t</div>
+                            <div class="char">y</div>
+                        </div>
+                    </div>
+
+                    <div class="text-gsap">
+                        <div class="d-flex">
+                            <div class="char1">c</div>
+                            <div class="char1">r</div>
+                            <div class="char1">e</div>
+                            <div class="char1">a</div>
+                            <div class="char1">t</div>
+                            <div class="char1">i</div>
+                            <div class="char1">v</div>
+                            <div class="char1">e</div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="char1">c</div>
+                            <div class="char1">r</div>
+                            <div class="char1">e</div>
+                            <div class="char1">a</div>
+                            <div class="char1">t</div>
+                            <div class="char1">i</div>
+                            <div class="char1">v</div>
+                            <div class="char1">e</div>
+                        </div>
+                    </div>
+                    <h1>digital marketing</h1>
+                </div>
 
                 <h2>
                     @ViewLocalizer["home2"]
@@ -218,7 +265,7 @@
                     attr: { src: imgSrc },
                 }).to(imgWrap, {
                     autoAlpha: 1,
-                    scale: 1,
+                    scale: 1.5,
                 });
             } else if (e.type === "mouseleave") {
                 var tl = gsap.timeline();
@@ -237,8 +284,24 @@
             });
         }
 
+        function initTweenMaxAnimation() {
+            gsap.to(".char", {
+                y: -100,
+                stagger: 0.08,
+                duration: 0.5,
+            });
+
+            gsap.to(".char1", {
+                y: -100,
+                stagger: 0.08,
+                delay: 1.5,
+                duration: 0.5,
+            });
+        }
+
         function init() {
             initAnimation();
+            initTweenMaxAnimation()
         }
 
         window.addEventListener("load", function () {

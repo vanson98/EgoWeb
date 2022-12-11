@@ -180,9 +180,13 @@ ul {
 
 .next-project,
 .prev-project {
+    color: #fff;
     font-size: 64px;
 }
-
+    .next-project:hover,
+    .prev-project:hover{
+        color: #fff;
+    }
     .next-project img {
         display: block;
     }
