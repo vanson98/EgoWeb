@@ -117,40 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="esa1" xml:space="preserve">
-    <value>Esa English with the orientation to become a professional
-                                        ielts-toeic exam preparation system for Vietnamese
-                                        students. With the new learning model, student approach.
-                                        Customers want to bring a new look and stand out from the
-                                        current domestic English education market. And we bring
-                                        visual solutions for branding guidelines for brands</value>
+  <data name="evi1" xml:space="preserve">
+    <value>Anh ngữ Evi là hệ thống tiếng Anh dành cho trẻ em từ 4-12 tuổi. Với sứ mệnh và tầm nhìn của thương hiệu, Evi cần một hình ảnh chuyên nghiệp, thiện cảm và sáng tạo.
+                                    Đó cũng là thách thức của chúng tôi khi thiết kế thương hiệu cho Evi.</value>
   </data>
-  <data name="esa2" xml:space="preserve">
-    <value>Our challenge was to come up with a visual strategy - similar
-                        colors strongly represent a youthful, modern and easy to
-                        understand style. This message is comprehensively expressed
-                        through logo, slogan, office suite, company profile, course
-                        brochure, center image.</value>
+  <data name="evi10" xml:space="preserve">
+    <value>học viên</value>
   </data>
-  <data name="esa3" xml:space="preserve">
-    <value>We took care to make all the information clear and easy to read
-                        while making the illustrations stand out - concise - modern.</value>
+  <data name="evi2" xml:space="preserve">
+    <value>Logo sử dụng chữ viết tay để mô phỏng chuyến bay của một chiếc máy bay giấy. Chúng tôi muốn mang một năng lượng đầy tham vọng của thương hiệu và phù hợp với ngành giáo dục.</value>
   </data>
-  <data name="esa4" xml:space="preserve">
-    <value>The interesting part of the project also lies in the articles about
-                    the brand on the facebook platform. We have a campain that opens
-                    with the message "jump of a lifetime".</value>
+  <data name="evi3" xml:space="preserve">
+    <value>Có 3 chương trình học, tên các chương trình được lấy cảm hứng từ ý tưởng của dự án: Mặt trăng, mặt trời, dải ngân hà. Tương ứng với tuổi. Với cùng một phông chữ, chúng tôi đã thay đổi phác thảo để tạo tên của từng khóa học tương ứng</value>
   </data>
-  <data name="esa5" xml:space="preserve">
-    <value>We have 3 courses corresponding to 3 files of customers of
-                        different age ranges. This campin focuses on introducing the
-                        course to all three of these subjects.</value>
+  <data name="evi4" xml:space="preserve">
+    <value>Với nỗ lực quảng cáo trên mạng xã hội facebook về chương trình cũng như sự kiện khai trương, Evi đã đạt được những con số bùng nổ trong ngày khai trương.</value>
   </data>
-  <data name="esa6" xml:space="preserve">
-    <value>With the messages centered on the insilde of each object, we
-                        deploy a set of images for each object.</value>
+  <data name="evi5" xml:space="preserve">
+    <value>Check in</value>
+  </data>
+  <data name="evi6" xml:space="preserve">
+    <value>lượt</value>
+  </data>
+  <data name="evi7" xml:space="preserve">
+    <value>Đăng kí ngay</value>
+  </data>
+  <data name="evi8" xml:space="preserve">
+    <value>học viên</value>
+  </data>
+  <data name="evi9" xml:space="preserve">
+    <value>Đăng kí học thử nghiệm</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>Esa English - Ego</value>
+    <value>Evi English - Ego</value>
   </data>
 </root>

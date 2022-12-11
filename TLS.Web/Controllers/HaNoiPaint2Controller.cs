@@ -4,7 +4,7 @@ namespace TLS.Web.Controllers
 {
     public class HaNoiPaint2Controller : Controller
     {
-        [Route("/hanoi-paints")]
+        [Route("/hanoi-paint-branding")]
         [HttpGet]
         public IActionResult Index()
         {

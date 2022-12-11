@@ -23,6 +23,10 @@ namespace TLS.DataProvider
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            foreach (var entity in builder.Model.GetEntityTypes())
+            {
+                entity.SetTableName(entity.GetTableName().ToLower());
+            }
             builder.Entity<AppUser>().ToTable("appusers");
             builder.Entity<AppRole>().ToTable("approles");
         }

@@ -1,4 +1,7 @@
-﻿@section Headers{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Models
+@inject IViewLocalizer ViewLocalizer
+@section Headers{
     <title>Simple Closet - Ego</title>
     <link href="~/css/simple-closet.css" rel="stylesheet" />
 }
@@ -29,15 +32,14 @@
                 <div class="col-lg-7 col-md-12 col-12">
                     <div class="row">
                         <div class="col-lg-12 col-md-6 col-6">
-                            <div class="title">DESCRIPTION</div>
+                            <div class="title">@ViewLocalizer["clo1"] </div>
                         </div>
                         <div class="col-lg-12 col-md-6 col-6">
                             <div class="desc">
                                 <p>
-                                    Simple is a designer women's office fashion brand. Having
-                                    been on the market since 2019, in 2022 Simple wants to make
-                                    a more spectacular breakthrough in image coverage,
-                                    innovation in both quality and story.
+                                    @ViewLocalizer["clo2"]
+                                   
+                                   
                                 </p>
                             </div>
                         </div>
@@ -48,9 +50,9 @@
         <section class="banner">
             <img src="./EgoImages/closet/b1.png" alt="" />
             <div class="text">
-                Changing the image and wanting to have a clearer voice when telling
-                the brand story, Simply syncing direct packaging and post images on
-                platforms from facebook to e-commerce platforms
+                @ViewLocalizer["clo3"]
+                
+                
             </div>
         </section>
 
@@ -79,9 +81,9 @@
 
     <section>
         <div class="text-banner-2">
-            To improve customer experience, simple has innovated from bags, boxes,
-            thank you cards, product packaging to increase the synchronization and
-            bring the professionalism of Simple to customers.
+                @ViewLocalizer["clo4"]
+            
+            
         </div>
         <img src="./EgoImages/closet/b2.png" alt="" />
     </section>
@@ -89,9 +91,9 @@
     <section>
         <div class="max-width section-three">
             <div class="text">
-                In addition to accessing the facebook platform and e-commerce
-                platform, we also help Simple reach customers on the Tiktok
-                platform.
+                    @ViewLocalizer["clo5"]
+                
+
             </div>
 
             <div class="row list-img">
@@ -116,8 +118,9 @@
     <section>
         <div class="max-width section-four">
             <div class="text">
-                And this change paid off for Simple. After 3 months of innovation,
-                we have received very good feedback.
+                    @ViewLocalizer["clo6"]
+                
+
             </div>
             <div class="d-flex">
                 <div class="item">
@@ -133,6 +136,9 @@
         </div>
     </section>
     <div class="max-width">
-        <partial name="_PageNavigation" />
+            @await Html.PartialAsync("_PageNavigation",new NavigationModel(){
+                PreviousPagePath = "/evi-english",
+        NextPagePath = "/mejarl-cosmetic"
+            })
     </div>
 </div>

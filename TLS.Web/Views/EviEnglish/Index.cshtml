@@ -1,4 +1,7 @@
-﻿@section Headers{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Models
+@inject IViewLocalizer ViewLocalizer
+@section Headers{
     <link href="~/css/evi-english.css" rel="stylesheet" />
     <title>Evi English - Ego</title>
 }
@@ -32,11 +35,14 @@
                         <div class="col-lg-12 col-md-6 col-6">
                             <div class="desc">
                                 <p>
-                                    Evi English is an English system for children from 4-12 years old. With the mission and vision of the brand, Evi needs a professional, sympathetic and creative image.
-                                    That is also our challenge when designing branding for Evi.
+                                    @ViewLocalizer["evi1"]
+                                    
+                                    
+                                    
                                     <br />
                                     <br />
-                                    The logo uses handwriting to simulate the flight of a paper airplane. We wanted to carry a beautiful ambitious energy of the brand and relevant to the education industry.
+                                    @ViewLocalizer["evi2"]
+                                    
                                 </p>
                             </div>
                         </div>
@@ -48,10 +54,9 @@
         <section class="banner">
             <img src="./EgoImages/evi/b1.png" alt="" />
             <div class="text">
-                There are 3 study programs, the names of the programs are inspired by
-                the concept of the project: Moon, sun, galax. Corresponds to age. With
-                the same font, we changed the outline to create the name of each
-                corresponding course
+                @ViewLocalizer["evi3"]
+                
+                
             </div>
         </section>
 
@@ -104,23 +109,23 @@
         <section class="max-width">
             <div class="wrapper-down-page">
                 <div class="text">
-                    With the effort of advertising on the social network facebook about
-                    the program as well as the opening event, Evi has achieved explosive
-                    numbers on the opening day.
+                    @ViewLocalizer["evi4"]
+                    
+                    
                 </div>
                 <div class="row">
                     <div class="col-5 d-flex flex-column justify-content-center">
                         <div class="box">
-                            <div class="title">Check in</div>
-                            <div class="number">135 <span class="hide-mobile">lượt</span></div>
+                            <div class="title">@ViewLocalizer["evi5"] </div>
+                            <div class="number">135 <span class="hide-mobile"> @ViewLocalizer["evi6"]</span></div>
                         </div>
                         <div class="box">
-                            <div class="title">Đăng kí ngay</div>
-                            <div class="number">30 <span class="hide-mobile">học viên</span></div>
+                            <div class="title"> @ViewLocalizer["evi7"]</div>
+                            <div class="number">30 <span class="hide-mobile"> @ViewLocalizer["evi8"]</span></div>
                         </div>
                         <div class="box">
-                            <div class="title">Đăng kí học thử nghiệm</div>
-                            <div class="number">25 <span class="hide-mobile">học viên</span></div>
+                            <div class="title"> @ViewLocalizer["evi9"]</div>
+                            <div class="number">25 <span class="hide-mobile"> @ViewLocalizer["evi10"]</span></div>
                         </div>
                     </div>
                     <div class="col-7">
@@ -140,6 +145,9 @@
             </div>
         </section>
         <div class="max-width">
-            <partial name="_PageNavigation" />
+            @await Html.PartialAsync("_PageNavigation",new NavigationModel(){
+        PreviousPagePath = "/esa-english",
+        NextPagePath = "/simple-closet"
+            })
         </div>
     </div>

@@ -117,40 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="esa1" xml:space="preserve">
-    <value>Esa English with the orientation to become a professional
-                                        ielts-toeic exam preparation system for Vietnamese
-                                        students. With the new learning model, student approach.
-                                        Customers want to bring a new look and stand out from the
-                                        current domestic English education market. And we bring
-                                        visual solutions for branding guidelines for brands</value>
-  </data>
-  <data name="esa2" xml:space="preserve">
-    <value>Our challenge was to come up with a visual strategy - similar
-                        colors strongly represent a youthful, modern and easy to
-                        understand style. This message is comprehensively expressed
-                        through logo, slogan, office suite, company profile, course
-                        brochure, center image.</value>
-  </data>
-  <data name="esa3" xml:space="preserve">
-    <value>We took care to make all the information clear and easy to read
-                        while making the illustrations stand out - concise - modern.</value>
-  </data>
-  <data name="esa4" xml:space="preserve">
-    <value>The interesting part of the project also lies in the articles about
-                    the brand on the facebook platform. We have a campain that opens
-                    with the message "jump of a lifetime".</value>
-  </data>
-  <data name="esa5" xml:space="preserve">
-    <value>We have 3 courses corresponding to 3 files of customers of
-                        different age ranges. This campin focuses on introducing the
-                        course to all three of these subjects.</value>
-  </data>
-  <data name="esa6" xml:space="preserve">
-    <value>With the messages centered on the insilde of each object, we
-                        deploy a set of images for each object.</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Esa English - Ego</value>
+  <data name="fara1" xml:space="preserve">
+    <value>Fara mong muốn hình ảnh spa trẻ trung, phù hợp với đối tượng khách hàng trẻ. Hình ảnh quảng cáo trên mạng xã hội sử dụng màu chính thống của thương hiệu để tăng độ phủ và gây ấn tượng với khách hàng.</value>
   </data>
 </root>
