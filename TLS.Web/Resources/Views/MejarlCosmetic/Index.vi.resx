@@ -117,40 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="esa1" xml:space="preserve">
-    <value>Esa English with the orientation to become a professional
-                                        ielts-toeic exam preparation system for Vietnamese
-                                        students. With the new learning model, student approach.
-                                        Customers want to bring a new look and stand out from the
-                                        current domestic English education market. And we bring
-                                        visual solutions for branding guidelines for brands</value>
+  <data name="mej1" xml:space="preserve">
+    <value>Mejarl là một công ty mỹ phẩm, Mejarl muốn có một bao bì thể hiện được cả sự cao sang nhưng cũng rất thực tế của thông tin trên bao bì sản phẩm. Hơn cả một bộ bao bì, họ muốn bao bì sản phẩm đầu tiên của công ty thể hiện tiếng nói và cá tính của thương hiệ</value>
   </data>
-  <data name="esa2" xml:space="preserve">
-    <value>Our challenge was to come up with a visual strategy - similar
-                        colors strongly represent a youthful, modern and easy to
-                        understand style. This message is comprehensively expressed
-                        through logo, slogan, office suite, company profile, course
-                        brochure, center image.</value>
-  </data>
-  <data name="esa3" xml:space="preserve">
-    <value>We took care to make all the information clear and easy to read
-                        while making the illustrations stand out - concise - modern.</value>
-  </data>
-  <data name="esa4" xml:space="preserve">
-    <value>The interesting part of the project also lies in the articles about
-                    the brand on the facebook platform. We have a campain that opens
-                    with the message "jump of a lifetime".</value>
-  </data>
-  <data name="esa5" xml:space="preserve">
-    <value>We have 3 courses corresponding to 3 files of customers of
-                        different age ranges. This campin focuses on introducing the
-                        course to all three of these subjects.</value>
-  </data>
-  <data name="esa6" xml:space="preserve">
-    <value>With the messages centered on the insilde of each object, we
-                        deploy a set of images for each object.</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Esa English - Ego</value>
+  <data name="mej2" xml:space="preserve">
+    <value>Không chỉ dừng lại ở thiết kế bao bì, chúng tôi còn lên ý tưởng nội dung, hình ảnh quảng cáo cho sản phẩm trên nền tảng facebook, nền tảng thương mại điện tử (nội dung đã được dịch sang tiếng Việt).</value>
   </data>
 </root>

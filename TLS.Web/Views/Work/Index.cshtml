@@ -1,4 +1,6 @@
-﻿@section Headers{
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer ViewLocalizer
+@section Headers{
     <link href="~/css/work.css" rel="stylesheet" />
 }
     <div class="work-page max-width">
@@ -7,15 +9,14 @@
                 <div class="col-lg-4 col-md-12 col-12"></div>
                 <div class="col-lg-8 col-md-12 col-12">
                     <h1>
-                        Design that has
+                        @ViewLocalizer["work1"] 
                         <br />
-                        <span class="primary-color">the power to transform</span>
+                        <span class="primary-color">@ViewLocalizer["work2"] </span>
                         <br />
-                        businesses
+                        @ViewLocalizer["work3"] 
                     </h1>
                     <div class="desc-title">
-                        We present a number of projects that represent the areas we have
-                        worked in.
+                        @ViewLocalizer["work4"]
                     </div>
                 </div>
             </div>
@@ -28,8 +29,8 @@
                         <div class="number">01</div>
                         <div class="name">Esa English</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work5"]
+                           
                         </div>
                     </div>
                     <div class="hide-mobile">
@@ -47,10 +48,9 @@
                 <div class="d-flex flex-column justify-content-between">
                     <div class="text">
                         <div class="number">02</div>
-                        <div class="name">Evi English</div>
+                        <div class="name">@ViewLocalizer["work6"]</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work7"]
                         </div>
                     </div>
                     <div class="hide-mobile">
@@ -64,8 +64,7 @@
                         <div class="number">03</div>
                         <div class="name">Simple Closet</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work8"]
                         </div>
                     </div>
                     <div class="hide-mobile">
@@ -83,10 +82,9 @@
                 <div class="d-flex flex-column justify-content-between">
                     <div class="text">
                         <div class="number">04</div>
-                        <div class="name">HaNoi Paint event</div>
+                        <div class="name">@ViewLocalizer["work9"]</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work10"]
                         </div>
                     </div>
                     <div class="hide-mobile">
@@ -98,10 +96,9 @@
                 <div class="d-flex flex-column justify-content-between">
                     <div class="text">
                         <div class="number">05</div>
-                        <div class="name">HaNoi paint social</div>
+                        <div class="name">@ViewLocalizer["work11"]</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work12"]
                         </div>
                     </div>
                     <div class="hide-mobile">
@@ -119,10 +116,10 @@
                 <div class="d-flex flex-column justify-content-between">
                     <div class="text">
                         <div class="number">06</div>
-                        <div class="name">Fara spa</div>
+                        <div class="name">@ViewLocalizer["work13"]</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work14"]
+                            
                         </div>
                     </div>
                     <div class="hide-mobile">
@@ -134,10 +131,9 @@
                 <div class="d-flex flex-column justify-content-between">
                     <div class="text">
                         <div class="number">07</div>
-                        <div class="name">Mejarl cosmetic</div>
+                        <div class="name">@ViewLocalizer["work15"]</div>
                         <div class="desc">
-                            Create a fresh, modern brand image in the education market in
-                            Vietnam
+                            @ViewLocalizer["work16"]
                         </div>
                     </div>
                     <div class="hide-mobile">
