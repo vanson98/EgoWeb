@@ -27,7 +27,24 @@ section {
         font-size: 42px;
     }
 
+
+.footer-about-mobile {
+    display: none;
+}
+
+.footer-about .row .col-lg-8 > div {
+    margin-bottom: 4rem;
+}
+
 @media screen and (max-width: 768px) {
+    .footer-about-mobile {
+        display: block;
+    }
+
+    .footer-about-pc {
+        display: none;
+    }
+
     /* common */
     section {
         font-size: 12px;

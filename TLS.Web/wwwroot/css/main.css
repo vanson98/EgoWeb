@@ -3,7 +3,7 @@
     --white-color: #f1f1f1;
     --black-color: #000;
     --transition: 0.3s all linear;
-    --background-color: #0a0726;
+    --background-color: #000;
     --font-family: "Epilogue";
 }
 
@@ -16,7 +16,7 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-    font-size: 14px;
+    font-size: 18px;
     box-sizing: border-box;
     color: var(--white-color);
     font-family: var(--font-family);
@@ -213,6 +213,11 @@ ul {
 
     .footer .title {
         font-size: 42px;
+    }
+
+    .footer a,
+    .footer a:hover {
+        color: #fff;
     }
 
 .link-redirect {

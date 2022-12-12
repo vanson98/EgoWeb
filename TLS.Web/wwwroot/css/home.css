@@ -68,7 +68,7 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-    font-size: 12px;
+    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -88,7 +88,7 @@
     grid-row-end: 5;
     grid-column-start: 4;
     grid-column-end: 8;
-    font-size: 12px;
+    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -107,7 +107,6 @@
     grid-row-end: 7;
     grid-column-start: 9;
     grid-column-end: 13;
-    font-size: 12px;
     margin-bottom: 2rem;
 }
 
@@ -135,6 +134,7 @@
     grid-column-end: 3;
     display: flex;
     justify-content: end;
+    margin-bottom: 12rem;
 }
 
 .item-8 {
@@ -143,8 +143,8 @@
     grid-column-end: 7;
     display: flex;
     align-items: center;
-    font-size: 12px;
-    margin-bottom: 2rem;
+    font-size: 18px;
+    margin-bottom: 13rem;
 }
 
 /* we-want */
@@ -292,10 +292,30 @@ nav ul .nav-link:hover {
         display: block;
     }
 
+.scroll {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 6%;
+    right: 3%;
+    width: 115px;
+}
+
+.scroll .circle {
+    width: 100%;
+}
+
+    .scroll .arrow {
+        width: 7%;
+    }
 
 
 @media screen and (max-width: 1160px) {
     /* banner */
+    .scroll {
+        display: none;
+    }
+
     .home-page .banner .h1-wrapper {
         grid-column-start: 1;
         grid-column-end: 12;
@@ -351,6 +371,7 @@ nav ul .nav-link:hover {
         grid-column-end: 13;
         grid-row-start: 1;
         grid-row-end: 2;
+        font-size: 12px;
     }
 
     .item-3 {
@@ -368,6 +389,7 @@ nav ul .nav-link:hover {
         grid-row-start: 2;
         grid-row-end: 3;
         margin-left: 0;
+        font-size: 12px;
     }
 
     .item-5 {
@@ -403,6 +425,7 @@ nav ul .nav-link:hover {
         grid-row-end: 4;
         font-size: 30px;
         justify-content: start;
+        margin-bottom: 0;
     }
 
     .item-8 {
@@ -410,6 +433,12 @@ nav ul .nav-link:hover {
         grid-column-end: 13;
         grid-row-start: 3;
         grid-row-end: 4;
+        font-size: 12px;
+        margin-bottom: 2rem;
+    }
+
+    .link-contact {
+        display: none;
     }
 
     /* we-want */
