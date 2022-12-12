@@ -18,5 +18,7 @@ namespace TLS.Web.Resources
         {
             return _localizer[key];
         }
+
+        
     }
 }

@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using TLS.Common.Enums.Extension;
 using Microsoft.Extensions.Configuration;
 using TLS.Service.NewsService;
+using Microsoft.AspNetCore.Localization;
 
 namespace TLS.Controllers
 {
@@ -32,6 +33,9 @@ namespace TLS.Controllers
         [Route("/")]
         public IActionResult Index()
         {
+            var rqf = Request.HttpContext.Features.Get<IRequestCultureFeature>();
+            // Culture contains the information of the requested culture
+            ViewBag.Culture =rqf.RequestCulture.Culture.Name;
             return View();
         }
 
