@@ -68,11 +68,19 @@
                     </div>
                     <h1>digital marketing</h1>
                 </div>
-
+            @if (ViewBag.Culture == "vi"){
+                <h2>
+                    @ViewLocalizer["home2"]
+                    <span class="primary-color">@ViewLocalizer["home3"]</span>
+                </h2>
+                
+            }else{
                 <h2>
                     @ViewLocalizer["home2"]
                     <span class="primary-color">@ViewLocalizer["home3"]</span> @ViewLocalizer["home4"]
                 </h2>
+            }
+                
             </div>
         </section>
 
@@ -94,19 +102,19 @@
                     </p>
                     <div>
                         <p>01</p>
-                        <p class="text">Digital Strategy</p>
+                    <p class="text">@ViewLocalizer["home18"] </p>
                     </div>
                     <div>
                         <p>02</p>
-                        <p class="text">Outsourced Marketing</p>
+                    <p class="text">@ViewLocalizer["home19"]</p>
                     </div>
                     <div>
                         <p>03</p>
-                        <p class="text">Multi-channel Marketing</p>
+                    <p class="text">@ViewLocalizer["home20"]</p>
                     </div>
                     <div>
                         <p>04</p>
-                        <p class="text">Media</p>
+                    <p class="text">@ViewLocalizer["home21"]</p>
                     </div>
 
                     <a href="/contact" class="link-redirect link-contact">
