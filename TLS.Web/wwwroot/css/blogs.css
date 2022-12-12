@@ -62,7 +62,7 @@ section {
 
 @media screen and (max-width: 768px) {
     .scroll {
-        top: 32%;
+        top: 17vw;
         right: 5%;
         width: 70px;
     }

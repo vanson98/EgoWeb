@@ -205,10 +205,29 @@
     overflow-x: hidden;
 }
 
-    .we-do h2 {
-        font-size: 98px;
-        margin: 10rem 0 5rem 0;
+.we-do .h2 {
+    margin: 10rem 0 5rem 0;
+}
+
+.we-do .h2 span {
+    margin-right: 20px;
+}
+
+.we-do .h2 a {
+    color: #fff;
+}
+
+    .we-do .h2 img {
+        display: none;
     }
+
+    .we-do .h2 a:hover {
+        color: #fff;
+    }
+
+.we-do h2 {
+   font-size: 98px;
+}
 
 .todo-list .item {
     align-items: end;
@@ -489,5 +508,13 @@ nav ul .nav-link:hover {
 @media screen and (max-width: 768px) {
     .aproach .text-vertical {
         margin-right: 3rem;
+    }
+
+    .we-do .h2 img {
+        display: block;
+    }
+
+    .we-do .h2 span {
+        margin-right: 12px;
     }
 }
