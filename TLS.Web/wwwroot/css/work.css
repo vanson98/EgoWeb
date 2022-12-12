@@ -42,7 +42,30 @@ section {
     font-size: 42px;
 }
 
+.scroll {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 3%;
+    right: 3%;
+    width: 115px;
+}
+
+    .scroll .circle {
+        width: 100%;
+    }
+
+    .scroll .arrow {
+        width: 7%;
+    }
+
 @media screen and (max-width: 768px) {
+    .scroll {
+        top: 4%;
+        right: 5%;
+        width: 60px;
+    }
+
     /* common */
     section {
         margin: 3rem 0;

@@ -43,7 +43,30 @@ section {
     -webkit-line-clamp: 3;
 }
 
+.scroll {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 6%;
+    right: 3%;
+    width: 115px;
+}
+
+    .scroll .circle {
+        width: 100%;
+    }
+
+    .scroll .arrow {
+        width: 7%;
+    }
+
 @media screen and (max-width: 768px) {
+    .scroll {
+        top: 32%;
+        right: 5%;
+        width: 70px;
+    }
+
     /* common */
     section {
         margin: 3rem 0;
