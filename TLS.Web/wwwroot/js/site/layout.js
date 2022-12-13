@@ -39,4 +39,6 @@
     closebtn.addEventListener("click", function () {
         sidebar.classList.remove("show-sidebar");
     });
+
+    AOS.init();
 })

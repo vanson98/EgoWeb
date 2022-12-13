@@ -315,9 +315,9 @@ nav ul .nav-link:hover {
     position: absolute;
     display: grid;
     place-items: center;
-    top: 6%;
-    right: 3%;
-    width: 115px;
+    top: 48%;
+    right: -52px;
+    width: 100px;
 }
 
 .scroll .circle {

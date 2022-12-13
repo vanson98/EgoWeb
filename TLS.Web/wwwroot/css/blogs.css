@@ -47,8 +47,8 @@ section {
     position: absolute;
     display: grid;
     place-items: center;
-    top: 6%;
-    right: 3%;
+    top: 90%;
+    right: 2%;
     width: 115px;
 }
 
