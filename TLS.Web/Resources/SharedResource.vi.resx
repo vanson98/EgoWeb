@@ -123,4 +123,19 @@
   <data name="AddContactSuccessMessage" xml:space="preserve">
     <value>Liên hệ của bạn đã được gửi! Cảm ơn bạn!</value>
   </data>
+  <data name="menu1" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="menu2" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+  <data name="menu3" xml:space="preserve">
+    <value>Công việc</value>
+  </data>
+  <data name="menu4" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="menu5" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
 </root>

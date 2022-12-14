@@ -123,4 +123,19 @@
   <data name="AddContactSuccessMessage" xml:space="preserve">
     <value>Your contact has been submitted! Thank you!</value>
   </data>
+  <data name="menu1" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="menu2" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="menu3" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="menu4" xml:space="preserve">
+    <value>Blog</value>
+  </data>
+  <data name="menu5" xml:space="preserve">
+    <value>Contact</value>
+  </data>
 </root>
