@@ -288,10 +288,10 @@ nav ul .nav-link:hover {
 
 .img-wrapper {
     position: absolute;
-    left: -25%;
-    top: -25%;
-    width: 22vw;
-    height: 18vw;
+    left: -40%;
+    top: -35%;
+    width: 26vw;
+    height: 20vw;
     overflow: hidden;
     pointer-events: none;
     z-index: 10;
