@@ -217,7 +217,7 @@ namespace TLS.Service.Catalog
                     MetaKeyWord = news.MetaKeyWord,
                     MetaTitle = news.MetaTitle,
                     ShortDescription = news.ShortDescription,
-                    Tags = news.Tags.Split(","),
+                    Tags = news.Tags?.Split(","),
                     Title = news.Title
                 };
             }

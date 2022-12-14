@@ -30,10 +30,14 @@
                 </div>
                 <div class="news-footer mt-4">
                     <div class="float-start">
-                    @foreach (var tag in Model.Tags)
+                    @if (Model.Tags != null)
                     {
-                        <a href="@("/blogs?tag="+tag)" class="blog-tag">@tag</a>
+                        foreach (var tag in Model.Tags)
+                        {
+                            <a href="@("/blogs?tag="+tag)" class="blog-tag">@tag</a>
+                        }
                     }
+
                 </div>
 
                 <strong class="float-end ">@Model.Author</strong>

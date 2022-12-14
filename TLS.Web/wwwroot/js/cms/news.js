@@ -107,18 +107,20 @@
 
 
     function onDeleteButtonClick() {
-        var objectId = $(this).attr('o-id');
-        $.ajax({
-            url: '/CmsNews/Delete/' + objectId,
-            method: 'DELETE',
-            async: true,
-            success: function (res) {
-                toastr.success(res.message);
-                if (res.code == 200) {
-                    news_dt.draw();
+        if (confirm("Bạn có chắc muốn xóa blog này không?") == true) {
+            var objectId = $(this).attr('o-id');
+            $.ajax({
+                url: '/CmsNews/Delete/' + objectId,
+                method: 'POST',
+                async: true,
+                success: function (res) {
+                    toastr.success(res.message);
+                    if (res.code == 200) {
+                        news_dt.draw();
+                    }
                 }
-            }
-        })
+            })
+        } 
     }
 
 
