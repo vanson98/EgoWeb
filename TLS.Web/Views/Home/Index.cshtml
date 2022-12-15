@@ -268,6 +268,8 @@
     @section Scripts{
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
+        gsap.to(".scroll .circle", { rotation: 360, transformOrigin: "center", ease: "none", duration: 15, repeat: -1 });
+
         var navLink = gsap.utils.toArray(".nav-link"),
             imgWrap = document.querySelector(".img-wrapper"),
             imgItem = document.querySelector(".img-placeholder img");

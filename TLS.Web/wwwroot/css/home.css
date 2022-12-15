@@ -324,9 +324,33 @@ nav ul .nav-link:hover {
     width: 100%;
 }
 
-    .scroll .arrow {
-        width: 7%;
+.scroll .arrow {
+    width: 6%;
+    animation: scrollArrow 1.3s linear infinite;
+}
+
+
+@keyframes scrollArrow {
+    20% {
+        transform: translateY(0%);
     }
+
+    40% {
+        transform: translateY(5%);
+    }
+
+    60% {
+        transform: translateY(10%);
+    }
+
+    80% {
+        transform: translateY(5%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
 
 
 @media screen and (max-width: 1160px) {
