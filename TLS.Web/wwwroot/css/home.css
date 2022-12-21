@@ -508,6 +508,10 @@ nav ul .nav-link:hover {
         margin: 3rem 0;
     }
 
+    .we-do {
+        overflow-x: visible;
+    }
+
    
 }
 
@@ -522,5 +526,9 @@ nav ul .nav-link:hover {
 
     .we-do .h2 span {
         margin-right: 12px;
+    }
+
+    .we-do .h2 {
+        margin: 2rem 0 0rem 0;
     }
 }
