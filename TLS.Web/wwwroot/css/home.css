@@ -164,7 +164,10 @@
 }
 
 .aproach-item {
+    flex: 1;
     margin: 0 10px;
+    display: flex;
+    flex-direction: column;
 }
 
     .aproach-item .title {
@@ -178,27 +181,6 @@
         margin-bottom: 1rem;
     }
 
-.aproach-list .aproach-item:nth-child(1),
-.aproach-list .aproach-item:nth-child(2),
-.aproach-list .aproach-item:nth-child(3),
-.aproach-list .aproach-item:nth-child(4) {
-    display: flex;
-    flex-direction: column;
-}
-
-.aproach-list .aproach-item:nth-child(1) {
-    justify-content: end;
-}
-
-.aproach-list .aproach-item:nth-child(2),
-.aproach-list .aproach-item:nth-child(3) {
-    justify-content: center;
-    margin-top: 3rem;
-}
-
-.aproach-list .aproach-item:nth-child(4) {
-    margin-top: 3rem;
-}
 
 /* we-do */
 .we-do {
