@@ -4,70 +4,75 @@
     <link href="~/css/contact.css" rel="stylesheet" />
     <title>Contact - Ego</title>
 }
-    <div class="contact-page">
-        <section>
-            <div class="max-width">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-12"></div>
-                    <div class="col-lg-7 col-md-12 col-12">
-                        <div>@ViewLocalizer["contact1"]  </div>
-                        <div class="address">
-                            2nd Floor, Helios A Town
-                            <br />
-                            75 Tam Trinh,Hoang Mai, HN
-                            <br />
-                            VietNam, 100000
-                        </div>
+<div class="contact-page">
+    <section>
+        <div class="max-width">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-12"></div>
+                <div class="col-lg-7 col-md-12 col-12">
+                    <div>@ViewLocalizer["contact1"]  </div>
+                    <div class="address">
+                        @ViewLocalizer["contact7"]
+                    </div>
 
-                        <div>@ViewLocalizer["contact2"] </div>
-                        <div class="address">
-                            <div>hello@egocreative.co</div>
-                            <div>0876 280 678</div>
-                        </div>
+                    <div>@ViewLocalizer["contact2"] </div>
+                    <div class="address">
+                        <div>hello@egocreative.co</div>
+                        <div>0876 280 678</div>
+                    </div>
 
-                        <div>
-                            <a href="#" class="link-redirect link-redirect-hide">
-                                <img src="./EgoImages/arrow.png" alt="" />
-                            </a>
-                        </div>
+                    <div>
+                        <a href="#" class="link-redirect link-redirect-hide">
+                            <img src="./EgoImages/arrow.png" alt="" />
+                        </a>
+                    </div>
 
-                        <div class="form-mobile">
-                            <div>@ViewLocalizer["contact3"] </div>
+                    <div class="form-mobile">
+                        <div>@ViewLocalizer["contact3"] </div>
+                        <br />
+                        <form id="contact-form">
+                            <label for="name">@ViewLocalizer["contact4"] </label>
+                            <input type="text" id="name" name="Name" />
                             <br />
-                            <form id="contact-form">
-                                <label for="name">@ViewLocalizer["contact4"] </label>
-                                <br />
-                                <input type="text" id="name" name="Name" />
-                                <br />
-                                <label for="phone">@ViewLocalizer["contact5"] </label>
-                                <br />
-                                <input type="phone" id="phone" name="PhoneNumber" />
-                                <br />
-                                <label for="business">@ViewLocalizer["contact6"] </label><br />
-                                <input type="text" id="business" name="BusinessAreas" />
-                                <br />
-                                <br />
-                                <div class="btn-submit">
-                                    <input type="button" id="contact_btn_submit" value="Submit" />
-                                </div>
-                            </form>
-                        </div>
+                            <label for="phone">@ViewLocalizer["contact5"] </label>
+                            <input type="phone" id="phone" name="PhoneNumber" />
+                            <br />
+                            <label for="name">@ViewLocalizer["contact8"] </label>
+                            <input type="text" id="name" name="Position" />
+                            <br />
+                            <label for="name">@ViewLocalizer["contact9"] </label>
+                            <input type="email" id="name" name="email" />
+                            <br />
+                            <label for="name">@ViewLocalizer["contact10"] </label>
+                            <input type="email" id="name" name="Company" />
+                            <br />
+                            <label for="business">@ViewLocalizer["contact6"] </label><br />
+                            <input type="text" id="business" name="BusinessAreas" />
+                            <br />
+                            <label for="business">@ViewLocalizer["contact11"] </label><br />
+                            <input type="text" id="business" name="SolutionOfInterest" />
+                            <br />
+                            <div class="btn-submit">
+                                <input type="button" id="contact_btn_submit" value="Submit" />
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="row">
-            <div class="scrolling">
-                <div class="text-animation">
-                    Thank you for searching
-                    <span class="primary-color">egocreative</span> . We will respond to
-                    every email sent to us
-                </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="scrolling">
+            <div class="text-animation">
+                Thank you for searching
+                <span class="primary-color">egocreative</span> . We will respond to
+                every email sent to us
             </div>
         </div>
     </div>
+</div>
 
-    @section Scripts{
+@section Scripts{
     <script>
         $("#contact_btn_submit").on("click", function () {
             debugger

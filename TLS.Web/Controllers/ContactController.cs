@@ -32,6 +32,10 @@ namespace TLS.Web.Controllers
                 BusinessAreas = input.BusinessAreas,
                 CreatedDate = DateTime.Now,
                 PhoneNumber = input.PhoneNumber,
+                Company = input.Company,
+                Email = input.Email,
+                Position = input.Position,
+                SolutionOfInterest = input.SolutionOfInterest,
             });
             if (result != null && result.Id > 0)
             {

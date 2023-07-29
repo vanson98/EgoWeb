@@ -50,6 +50,18 @@
                     data: 'businessAreas'
                 },
                 {
+                    data: 'company'
+                },
+                {
+                    data: 'email'
+                },
+                {
+                    data: 'position'
+                },
+                {
+                    data: 'solutionOfInterest'
+                },
+                {
                     data: 'createdDate',
                 },
 

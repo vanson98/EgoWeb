@@ -117,37 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="contact1" xml:space="preserve">
-    <value>Visit us at</value>
+  <data name="ft1" xml:space="preserve">
+    <value>Đừng ngần ngại </value>
   </data>
-  <data name="contact10" xml:space="preserve">
-    <value>Company</value>
-  </data>
-  <data name="contact11" xml:space="preserve">
-    <value>Solotion of interest</value>
-  </data>
-  <data name="contact2" xml:space="preserve">
-    <value>Stay connected with us</value>
-  </data>
-  <data name="contact3" xml:space="preserve">
-    <value>or leave your contact information</value>
-  </data>
-  <data name="contact4" xml:space="preserve">
-    <value>Full Name</value>
-  </data>
-  <data name="contact5" xml:space="preserve">
-    <value>Phone</value>
-  </data>
-  <data name="contact6" xml:space="preserve">
-    <value>Business areas</value>
-  </data>
-  <data name="contact7" xml:space="preserve">
-    <value>4nd Floor, UDIC Riverside 122 Vinh Tuy, Hai Ba Trung, Ha Noi</value>
-  </data>
-  <data name="contact8" xml:space="preserve">
-    <value>Position</value>
-  </data>
-  <data name="contact9" xml:space="preserve">
-    <value>Email</value>
+  <data name="ft2" xml:space="preserve">
+    <value>kết nối với chúng tôi để nhận tư vấn</value>
   </data>
 </root>

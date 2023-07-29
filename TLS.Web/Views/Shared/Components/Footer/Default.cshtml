@@ -1,9 +1,15 @@
-﻿<section class="footer max-width" id="app-footer">
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Resources
+@inject LocalizationService LocalizationService
+@inject IViewLocalizer ViewLocalizer
+
+<section class="footer max-width" id="app-footer">
     <div class="row">
         <div class="col-lg-6 col-md-12 col-12">
             <div class="h2">
-                you feel
-                <span class="primary-color"> interested </span>
+                @ViewLocalizer["ft1"]
+                <br />
+                <span class="primary-color">  @ViewLocalizer["ft2"] </span>
             </div>
         </div>
         <div class="col-lg-6 col-md-12 col-12">

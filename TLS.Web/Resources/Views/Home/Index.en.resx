@@ -161,6 +161,9 @@
   <data name="home21" xml:space="preserve">
     <value>Media</value>
   </data>
+  <data name="home22" xml:space="preserve">
+    <value>Marketing</value>
+  </data>
   <data name="home3" xml:space="preserve">
     <value>build sustainable</value>
   </data>

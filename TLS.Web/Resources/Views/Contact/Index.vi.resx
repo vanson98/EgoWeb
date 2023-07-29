@@ -120,6 +120,12 @@
   <data name="contact1" xml:space="preserve">
     <value>Chúng tôi có mặt tại</value>
   </data>
+  <data name="contact10" xml:space="preserve">
+    <value>Công ty</value>
+  </data>
+  <data name="contact11" xml:space="preserve">
+    <value>Giải pháp quan tâm</value>
+  </data>
   <data name="contact2" xml:space="preserve">
     <value>Giữ liên lạc với chúng tôi</value>
   </data>
@@ -127,12 +133,21 @@
     <value>hoặc để lại thông tin, chúng tôi sẽ liên hệ lại</value>
   </data>
   <data name="contact4" xml:space="preserve">
-    <value>Tên</value>
+    <value>Họ và tên</value>
   </data>
   <data name="contact5" xml:space="preserve">
     <value>Số điện thoại liên hệ</value>
   </data>
   <data name="contact6" xml:space="preserve">
     <value>Ngành nghề kinh doanh</value>
+  </data>
+  <data name="contact7" xml:space="preserve">
+    <value>Tầng 4, UDIC Riverside 122 Vĩnh Tuy, Hai Bà Trưng, Hà Nội</value>
+  </data>
+  <data name="contact8" xml:space="preserve">
+    <value>Chức vụ</value>
+  </data>
+  <data name="contact9" xml:space="preserve">
+    <value>Email</value>
   </data>
 </root>

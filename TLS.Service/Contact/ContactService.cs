@@ -40,7 +40,10 @@ namespace TLS.Service.Catalog
                                              Name = x.Name,
                                              BusinessAreas = x.BusinessAreas,
                                              PhoneNumber = x.PhoneNumber,
-
+                                             SolutionOfInterest = x.SolutionOfInterest,
+                                             Position = x.Position,
+                                             Email = x.Email,
+                                             Company = x.Company,
                                          })
                                          .ToListAsync();
 
