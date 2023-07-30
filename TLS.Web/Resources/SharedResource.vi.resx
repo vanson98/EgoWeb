@@ -138,4 +138,7 @@
   <data name="menu5" xml:space="preserve">
     <value>Liên hệ</value>
   </data>
+  <data name="menu6" xml:space="preserve">
+    <value>Giải pháp</value>
+  </data>
 </root>

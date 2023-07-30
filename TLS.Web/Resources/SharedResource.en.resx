@@ -138,4 +138,7 @@
   <data name="menu5" xml:space="preserve">
     <value>Contact</value>
   </data>
+  <data name="menu6" xml:space="preserve">
+    <value>Solution</value>
+  </data>
 </root>

@@ -1,0 +1,10 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Resources
+@inject LocalizationService LocalizationService
+@inject IViewLocalizer ViewLocalizer
+
+
+@section Headers{
+    <link href="~/css/about.css" rel="stylesheet" />
+    <title>@ViewLocalizer["Title"]</title>
+}
