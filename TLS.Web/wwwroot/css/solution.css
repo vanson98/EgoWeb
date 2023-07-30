@@ -1,0 +1,34 @@
+﻿.solution-page {
+    font-size: 36px;
+    margin-left: 15%;
+}
+
+    .solution-page .number {
+        font-size: 24px;
+    }
+
+    .solution-page a {
+        color: var(--white-color);
+        transition: all 0.3s linear;
+    }
+
+        .solution-page a:hover {
+            opacity: 0.75;
+        }
+
+@media screen and (max-width: 1160px) {
+    .solution-page {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .solution-page {
+        font-size: 24px;
+    }
+
+        .solution-page .number {
+            font-size: 18px;
+        }
+}
