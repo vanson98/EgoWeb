@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using TLS.DataProvider.Entities;
 using TLS.Service.Catalog;
@@ -7,6 +8,7 @@ using TLS.Web.Resources;
 
 namespace TLS.Web.Controllers
 {
+   
     public class ContactController : Controller
     {
         private readonly IContactService _contactService;

@@ -123,4 +123,10 @@
   <data name="ft2" xml:space="preserve">
     <value>kết nối với chúng tôi để nhận tư vấn</value>
   </data>
+  <data name="ft3" xml:space="preserve">
+    <value>122 Vĩnh Tuy</value>
+  </data>
+  <data name="ft4" xml:space="preserve">
+    <value>Hai Bà Trưng, Hà Nội</value>
+  </data>
 </root>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Localization;
 using System.Reflection;
+using System.Threading;
 
 namespace TLS.Web.Resources
 {

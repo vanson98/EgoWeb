@@ -85,7 +85,7 @@ namespace TLS
                 options.SlidingExpiration = true;
                 options.LoginPath = $"/Account/Login"; // Chuyển hướng nếu truy cập chức năng cần đăng nhập
                 options.LogoutPath = $"/Account/Logout";
-                options.AccessDeniedPath = $"/Home/Index"; // Chuyển hướng khi truy cập chức năng ko cho phép
+                options.AccessDeniedPath = $"/Admin"; // Chuyển hướng khi truy cập chức năng ko cho phép
             });
 
             services.Configure<SecurityStampValidatorOptions>(options =>

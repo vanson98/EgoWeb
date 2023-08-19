@@ -123,4 +123,10 @@
   <data name="ft2" xml:space="preserve">
     <value>interested</value>
   </data>
+  <data name="ft3" xml:space="preserve">
+    <value>122 Vinh Tuy</value>
+  </data>
+  <data name="ft4" xml:space="preserve">
+    <value>Hai Ba Trung, HN</value>
+  </data>
 </root>

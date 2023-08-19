@@ -9,7 +9,7 @@ using TLS.ViewModels.News;
 
 namespace TLS.Web.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class CmsContactController : Controller
     {
         private readonly IContactService _contactService;
