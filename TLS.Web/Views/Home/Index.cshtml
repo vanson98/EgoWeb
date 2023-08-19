@@ -3,155 +3,251 @@
 @inject LocalizationService LocalizationService
 @inject IViewLocalizer ViewLocalizer
 @section Headers{
-    <link href="~/css/home.css" rel="stylesheet" />
+    <link href="~/css/home2.css" rel="stylesheet" />
     <title>Home - Ego</title>
 }
-    <div class="home-page relative">
+<div class="home-page relative">
 
-        <section class="max-width banner relative">
-            <div class="banner-content">
-                <p data-aos="fade-up"
-               data-aos-duration="700"
-               data-aos-easing="linear">
-                    @ViewLocalizer["home1"]
-                </p>
+    @* <section class="max-width banner relative">
+    <div class="banner-content">
+    <p data-aos="fade-up"
+    data-aos-duration="700"
+    data-aos-easing="linear">
+    @ViewLocalizer["home1"]
+    </p>
 
-                <div class="h1-wrapper relative">
-                    <h1>We're</h1>
-                    <div class="text-gsap">
-                        <div class="d-flex">
-                            <div class="char">e</div>
-                            <div class="char">l</div>
-                            <div class="char">e</div>
-                            <div class="char">m</div>
-                            <div class="char">e</div>
-                            <div class="char">n</div>
-                            <div class="char">t</div>
-                            <div class="char">y</div>
-                        </div>
+    <div class="h1-wrapper relative">
+    <h1>We're</h1>
+    <div class="text-gsap">
+    <div class="d-flex">
+    <div class="char">e</div>
+    <div class="char">l</div>
+    <div class="char">e</div>
+    <div class="char">m</div>
+    <div class="char">e</div>
+    <div class="char">n</div>
+    <div class="char">t</div>
+    <div class="char">y</div>
+    </div>
 
-                        <div class="d-flex">
-                            <div class="char">e</div>
-                            <div class="char">l</div>
-                            <div class="char">e</div>
-                            <div class="char">m</div>
-                            <div class="char">e</div>
-                            <div class="char">n</div>
-                            <div class="char">t</div>
-                            <div class="char">y</div>
-                        </div>
-                    </div>
+    <div class="d-flex">
+    <div class="char">e</div>
+    <div class="char">l</div>
+    <div class="char">e</div>
+    <div class="char">m</div>
+    <div class="char">e</div>
+    <div class="char">n</div>
+    <div class="char">t</div>
+    <div class="char">y</div>
+    </div>
+    </div>
 
-                    <div class="text-gsap">
-                        <div class="d-flex">
-                            <div class="char1">c</div>
-                            <div class="char1">r</div>
-                            <div class="char1">e</div>
-                            <div class="char1">a</div>
-                            <div class="char1">t</div>
-                            <div class="char1">i</div>
-                            <div class="char1">v</div>
-                            <div class="char1">e</div>
-                        </div>
+    <div class="text-gsap">
+    <div class="d-flex">
+    <div class="char1">c</div>
+    <div class="char1">r</div>
+    <div class="char1">e</div>
+    <div class="char1">a</div>
+    <div class="char1">t</div>
+    <div class="char1">i</div>
+    <div class="char1">v</div>
+    <div class="char1">e</div>
+    </div>
 
-                        <div class="d-flex">
-                            <div class="char1">c</div>
-                            <div class="char1">r</div>
-                            <div class="char1">e</div>
-                            <div class="char1">a</div>
-                            <div class="char1">t</div>
-                            <div class="char1">i</div>
-                            <div class="char1">v</div>
-                            <div class="char1">e</div>
-                        </div>
-                    </div>
-                    <h1>digital marketing</h1>
+    <div class="d-flex">
+    <div class="char1">c</div>
+    <div class="char1">r</div>
+    <div class="char1">e</div>
+    <div class="char1">a</div>
+    <div class="char1">t</div>
+    <div class="char1">i</div>
+    <div class="char1">v</div>
+    <div class="char1">e</div>
+    </div>
+    </div>
+    <h1>digital marketing</h1>
 
 
-                    <div class="scroll">
-                        <img src="./EgoImages/scroll.png" alt="" class="circle" />
-                        <img src="./EgoImages/arrow.png" alt="" class="absolute arrow" />
-                    </div>
-                </div>
-            @if (ViewBag.Culture == "vi")
-            {
-                <h2 data-aos="fade-up"
-                data-aos-duration="700"
-                data-aos-easing="linear">
-                    @ViewLocalizer["home2"]
-                    <span class="primary-color">@ViewLocalizer["home3"]</span>
-                </h2>
+    <div class="scroll">
+    <img src="./EgoImages/scroll.png" alt="" class="circle" />
+    <img src="./EgoImages/arrow.png" alt="" class="absolute arrow" />
+    </div>
+    </div>
+    @if (ViewBag.Culture == "vi")
+    {
+    <h2 data-aos="fade-up"
+    data-aos-duration="700"
+    data-aos-easing="linear">
+    @ViewLocalizer["home2"]
+    <span class="primary-color">@ViewLocalizer["home3"]</span>
+    </h2>
 
-            }
-            else
-            {
-                <h2 data-aos="fade-up"
-                data-aos-duration="700"
-                data-aos-easing="linear">
-                    @ViewLocalizer["home2"]
-                    <span class="primary-color">@ViewLocalizer["home3"]</span> @ViewLocalizer["home4"]
-                </h2>
-            }
+    }
+    else
+    {
+    <h2 data-aos="fade-up"
+    data-aos-duration="700"
+    data-aos-easing="linear">
+    @ViewLocalizer["home2"]
+    <span class="primary-color">@ViewLocalizer["home3"]</span> @ViewLocalizer["home4"]
+    </h2>
+    }
 
-        </div>
+    </div>
     </section>
 
     <section class="max-width value-number">
-        <div class="number-content" data-aos="fade-up"
-             data-aos-duration="1500"
-             data-aos-easing="linear">
-            <div class="item-1">12h</div>
-            <div class="item-2">
-                @ViewLocalizer["home5"]
-            </div>
-            <div class="item-3">20-25%</div>
-            <div class="item-4">
-                @ViewLocalizer["home6"]
-            </div>
-            <div class="item-5">4</div>
-            <div class="item-6">
-                <p class="paragraph">
-                    @ViewLocalizer["home7"]
+    <div class="number-content" data-aos="fade-up"
+    data-aos-duration="1500"
+    data-aos-easing="linear">
+    <div class="item-1">12h</div>
+    <div class="item-2">
+    @ViewLocalizer["home5"]
+    </div>
+    <div class="item-3">20-25%</div>
+    <div class="item-4">
+    @ViewLocalizer["home6"]
+    </div>
+    <div class="item-5">4</div>
+    <div class="item-6">
+    <p class="paragraph">
+    @ViewLocalizer["home7"]
 
-                </p>
-                <div>
-                    <p>01</p>
-                    <p class="text">@ViewLocalizer["home18"] </p>
-                </div>
-                <br />
-                <div>
-                    <p>02</p>
-                    <p class="text">@ViewLocalizer["home19"]</p>
-                </div>
-                <br />
-                <div>
-                    <p>03</p>
-                    <p class="text">@ViewLocalizer["home20"]</p>
-                </div>
-                <br />
-                <div>
-                    <p>04</p>
-                    <p class="text">@ViewLocalizer["home21"]</p>
-                </div>
-                <br />
-                <div>
-                    <p>05</p>
-                    <p class="text">@ViewLocalizer["home22"]</p>
+    </p>
+    <div>
+    <p>01</p>
+    <p class="text">@ViewLocalizer["home18"] </p>
+    </div>
+    <br />
+    <div>
+    <p>02</p>
+    <p class="text">@ViewLocalizer["home19"]</p>
+    </div>
+    <br />
+    <div>
+    <p>03</p>
+    <p class="text">@ViewLocalizer["home20"]</p>
+    </div>
+    <br />
+    <div>
+    <p>04</p>
+    <p class="text">@ViewLocalizer["home21"]</p>
+    </div>
+    <br />
+    <div>
+    <p>05</p>
+    <p class="text">@ViewLocalizer["home22"]</p>
+    </div>
+
+    <a href="/contact" class="link-redirect link-contact">
+    <img src="~/EgoImages/arrow.png" alt="" />
+    </a>
+    </div>
+    <div class="item-7">1</div>
+    <div class="item-8">
+    @ViewLocalizer["home8"]
+
+    </div>
+    </div>
+    </section>
+    *@
+
+    <section class="section-header max-width relative">
+        <div class="row">
+            <div class="col-lg-8 col-12">
+                <div class="heading">
+                    We're
+                    <span class="fw-bold"> brand & marketing </span>
+                    strategy agency
                 </div>
 
-                <a href="/contact" class="link-redirect link-contact">
-                    <img src="~/EgoImages/arrow.png" alt="" />
-                </a>
+                <div class="mt-5">
+                    EGO cung cấp các giải pháp xây dựng chiến lược thương hiệu & chiến
+                    lược tiếp thị Digital cho những doanh nghiệp khởi sự, quy mô vừa &
+                    nhỏ.
+                </div>
+                <div>
+                    Với mục tiêu xây dựng doanh số bền vững dựa trên sức mạnh của thương
+                    hiệu.
+                </div>
             </div>
-            <div class="item-7">1</div>
-            <div class="item-8">
-                @ViewLocalizer["home8"]
-
+            <div class="col-lg-4 col-12">
+                <div class="hello-wrapper absolute">
+                    <img class="w-100" src="./EgoImages/home/hello-ego.png" />
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="we-want max-width">
+    <section class="section-marketing bg-white black-color py-5">
+        <div class="max-width">
+            <div class="row">
+                <div class="col-lg-10 col-12 p-0">
+                    <p class="heading py-5">
+                        Chúng tôi <span class="primary-color">liên kết</span> mục tiêu
+                        thương hiệu & marketing với mục tiêu kinh doanh của doanh nghiệp
+                    </p>
+                </div>
+            </div>
+
+            <div class="row pb-5">
+                <div class="col-lg-6 col-12">
+                    <p class="font-32 text-center">Tài sản doanh nghiệp</p>
+                    <img class="w-100" src="./EgoImages/home/circle.png" />
+                    <p class="mt-5 pt-5">
+                        Sự đồng bộ từ chiến lược đến thực thi quyết định đến kết quả thành
+                        công của mọi dự án.
+                        <br />
+                        <br />
+                        Chúng tôi ý thức mọi tác động của Ego dù là chiến lược hay thực
+                        thi đều ảnh hướng đến chất lượng tài sản của khách hàng trong
+                        tương lai.
+                    </p>
+                </div>
+                <div class="col-lg-1 col-12"></div>
+                <div class="col-lg-5 col-12">
+                    <div class="mb-5">
+                        <p class="font-32">Dịch vụ tinh gọn</p>
+                        <p>
+                            Mục tiêu của chúng tôi là tập trung giải quyết các vấn đề mà chủ
+                            thương hiệu mới - doanh nghiệp vừa và nhỏ gặp phải với triển
+                            khai Branding & Digital Marketing. Với 4 dịch vụ tinh gọn và
+                            hiệu quả cao.
+                        </p>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-3">
+                        <p class="mt-3">01</p>
+                        <p class="font-38">
+                            Giải pháp toàn diện cho doanh nghiệp khởi sự - Easy go
+                        </p>
+                    </div>
+                    <div class="d-flex gap-3 mb-3">
+                        <p class="mt-3">02</p>
+                        <p class="font-38">Tối ưu các nền tảng truyền thông sở hữu</p>
+                    </div>
+                    <div class="d-flex gap-3 mb-3">
+                        <p class="mt-3">03</p>
+                        <p class="font-38">
+                            Giải pháp sản xuất video ngắn chuyên sâu Etik Production
+                        </p>
+                    </div>
+                    <div class="d-flex gap-3 mb-3">
+                        <p class="mt-3">04</p>
+                        <p class="font-38">Phòng Marketing thuê ngoài</p>
+                    </div>
+
+                    <a href="">
+                        <div class="link-redirect">
+                            <img src="./EgoImages/arrow.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="we-want max-width py-5 my-5">
         <div class="heading"
              data-aos="fade-up"
              data-aos-duration="800"
@@ -312,6 +408,62 @@
         </div>
     </section>
 
+
+    <section class="section-customer bg-white py-5">
+        <div class="max-width">
+            <div class="black-color font-64 my-5">Khách hàng của chúng tôi</div>
+            <div class="text-center">
+                <img src="./EgoImages/home/customer.png" />
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-form py-5 max-width">
+        <div class="row">
+            <div class="col-lg-6 col-12"></div>
+            <div class="col-lg-4 col-12 mb-2">
+                <img src="./EgoImages/about/connect.png" />
+            </div>
+            <div class="col-lg-2 col-12"></div>
+            <div class="col-lg-6 col-12 title">
+                Chúng tôi quan tâm
+                đến dự án & doanh nghiệp
+                của bạn
+            </div>
+            <div class="col-lg-1 col-12"></div>
+            <div class="col-lg-5 col-12">
+                <div class="form-mobile">
+                    <form id="contact-form">
+                        <label for="name">@ViewLocalizer["contact4"] </label>
+                        <input type="text" id="name" name="Name" />
+                        <br />
+                        <label for="phone">@ViewLocalizer["contact5"] </label>
+                        <input type="phone" id="phone" name="PhoneNumber" />
+                        <br />
+                        <label for="name">@ViewLocalizer["contact8"] </label>
+                        <input type="text" id="name" name="Position" />
+                        <br />
+                        <label for="name">@ViewLocalizer["contact9"] </label>
+                        <input type="email" id="name" name="email" />
+                        <br />
+                        <label for="name">@ViewLocalizer["contact10"] </label>
+                        <input type="email" id="name" name="Company" />
+                        <br />
+                        <label for="business">@ViewLocalizer["contact6"] </label><br />
+                        <input type="text" id="business" name="BusinessAreas" />
+                        <br />
+                        <label for="business">@ViewLocalizer["contact11"] </label><br />
+                        <input type="text" id="business" name="SolutionOfInterest" />
+                        <br />
+                        <div class="btn-submit">
+                            <input type="button" id="contact_btn_submit" value="Submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 
