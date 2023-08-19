@@ -53,6 +53,40 @@ ul {
     color: var(--primary-color);
 }
 
+.font-120 {
+    font-size: 120px;
+}
+
+.font-64 {
+    font-size: 64px;
+    line-height: 120%;
+}
+
+.font-32 {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.bg-white {
+    color: white;
+}
+
+.bg-black {
+    color: black;
+}
+
+.black-color {
+    color: #000;
+}
+
+.button-primary {
+    color: white;
+    width: 200px;
+    padding: 6px;
+    border: none;
+    background-color: var(--primary-color);
+}
+
 /* menu */
 .menu {
     top: 210px;
@@ -288,6 +322,18 @@ ul {
     .link-redirect {
         width: 100px;
         height: 100px;
+    }
+
+    .font-120 {
+        font-size: 80px;
+    }
+
+    .font-64 {
+        font-size: 32px;
+    }
+
+    .font-32 {
+        font-size: 24px;
     }
 }
 
