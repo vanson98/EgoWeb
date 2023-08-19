@@ -1,0 +1,240 @@
+﻿
+.max-width {
+    padding: 0 150px;
+}
+
+.menu {
+    top: 250px;
+    padding: 0 25px;
+}
+
+
+.section-banner {
+    height: 750px;
+    margin-top: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../EgoImages/solution-3/banner-2.png");
+}
+
+.card-customer .image {
+    height: 130px;
+    width: 130px;
+}
+
+.card-customer img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.decor .fb {
+    width: 10%;
+    bottom: -8%;
+    left: 20%;
+}
+
+.decor .insta {
+    top: -7%;
+    right: 2%;
+    width: 7%;
+}
+
+.decor .tiktok {
+    width: 32%;
+    bottom: 28%;
+    left: 20%;
+}
+
+.decor .be {
+    width: 5%;
+    top: 26%;
+    left: 0;
+}
+
+.decor .linkin {
+    width: 6%;
+    bottom: 2%;
+    right: 8%;
+}
+
+.section-handle
+ {
+    padding: 120px 150px;
+}
+
+.sologan {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-project .image {
+    height: 400px;
+}
+
+.card-project img {
+    object-fit: cover;
+}
+
+/* we-want */
+
+.we-want .heading {
+    color: #707070;
+    line-height: 120%;
+    margin-bottom: 4rem;
+}
+
+.aproach-list {
+    min-height: 400px;
+}
+
+.aproach .text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotateZ(180deg);
+    font-size: 98px;
+}
+
+.aproach-item {
+    margin: 0 10px;
+}
+
+    .aproach-item .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 300;
+        color: var(--primary-color);
+        background: var(--white-color);
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+.aproach-list .aproach-item:nth-child(1),
+.aproach-list .aproach-item:nth-child(2),
+.aproach-list .aproach-item:nth-child(3),
+.aproach-list .aproach-item:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+}
+
+.aproach-list .aproach-item:nth-child(1) {
+    justify-content: end;
+}
+
+.aproach-list .aproach-item:nth-child(2),
+.aproach-list .aproach-item:nth-child(3) {
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.aproach-list .aproach-item:nth-child(4) {
+    margin-top: 3rem;
+}
+
+/* form css*/
+.section-form .title {
+    font-size: 52px;
+}
+
+.icon-footer {
+    width: 44px;
+    height: 44px;
+}
+
+.form-mobile {
+    display: block;
+}
+
+    .form-mobile label {
+        margin-bottom: 0.2rem;
+    }
+
+    .form-mobile input {
+        width: 100%;
+        border-radius: 2px;
+        margin-bottom: 0.8rem;
+        border-color: transparent;
+    }
+
+.btn-submit {
+    width: 100px;
+    margin: 0 auto;
+}
+
+    .btn-submit input {
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+
+.form-wrapper {
+    background-color: var(--black-color);
+}
+
+.form-wrapper {
+    color: white;
+    padding: 20px;
+    background-color: var(--black-color);
+}
+
+@media screen and (max-width: 768px) {
+    .max-width {
+        padding: 0 20px;
+    }
+
+    .section-banner {
+        height: 500px;
+    }
+
+    .decor {
+        display: none;
+    }
+
+    .section-handle {
+        padding: 80px 20px;
+    }
+
+    .sologan {
+        padding: 50px 0;
+    }
+
+    .card-project .image {
+        height: 300px;
+    }
+
+    /* we-want */
+    .we-want .heading,
+    .aproach .text-vertical {
+        font-size: 30px;
+    }
+
+    .aproach .text-vertical {
+        margin-right: 8rem;
+    }
+
+    .aproach-list {
+        flex-direction: column;
+    }
+
+        .aproach-list .aproach-item {
+            display: flex;
+            font-size: 12px;
+            margin-top: 0 !important;
+            flex-direction: row !important;
+        }
+
+    .aproach-item {
+        margin: 0 0 2rem 0;
+    }
+
+        .aproach-item .title {
+            font-size: 16px;
+            min-width: 95px;
+            height: 40px;
+            margin-right: 1rem;
+        }
+
+    .todo-list {
+        display: none;
+    }
+}
