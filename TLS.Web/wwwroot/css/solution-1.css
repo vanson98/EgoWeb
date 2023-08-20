@@ -1,5 +1,9 @@
 ﻿
 /* override */
+html,
+body {
+    background-color: white !important;
+}
 
 .switch-btn button {
     color: white
@@ -7,6 +11,7 @@
 
 .menu ul li a {
     font-size: 20px;
+    color: var(--black-color);
 }
 
 .max-width {
@@ -15,32 +20,12 @@
 
 
 .menu {
-    top: 230px;
+    top: 320px;
     padding: 0 25px;
 }
 
-.logo-ego {
-    right: 0;
-    position: absolute;
-}
-
-/* solution */
-.section-banner {
-    height: 680px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("../EgoImages/solution-4/banner-4.png");
-}
-
-.card-customer .image {
-    height: 130px;
-    width: 130px;
-}
-
-.card-customer img {
-    object-fit: cover;
-    border-radius: 50%;
+img {
+    width: 100%;
 }
 
 /* form css*/
@@ -89,24 +74,14 @@
 }
 
 @media screen and (max-width: 768px) {
-    .section-banner {
-        height: 500px;
+
+    /* override */
+    html,
+    body {
+        background-color: var(--black-color) !important;
     }
 
     .max-width {
         padding: 0 20px;
     }
-
-    .card-customer {
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-
-    .card-customer .image {
-        height: 160px;
-        width: 160px;
-    }
 }
-
-
-

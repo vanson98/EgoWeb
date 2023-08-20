@@ -83,9 +83,9 @@ video {
     padding: 100px 0;
 }
 
-    .section-customer img {
-        width: 100%;
-    }
+.section-customer img {
+    width: 100%;
+}
 
 .card-service .price {
     font-size: 40px;
@@ -118,26 +118,26 @@ video {
     display: block;
 }
 
-    .form-mobile label {
-        margin-bottom: 0.2rem;
-    }
+.form-mobile label {
+    margin-bottom: 0.2rem;
+}
 
-    .form-mobile input {
-        width: 100%;
-        border-radius: 2px;
-        margin-bottom: 0.8rem;
-        border-color: transparent;
-    }
+.form-mobile input {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 0.8rem;
+    border-color: transparent;
+}
 
 .btn-submit {
     width: 100px;
     margin: 0 auto;
 }
 
-    .btn-submit input {
-        color: #fff;
-        background-color: var(--primary-color);
-    }
+.btn-submit input {
+    color: #fff;
+    background-color: var(--primary-color);
+}
 
 .form-wrapper {
     background-color: var(--black-color);
@@ -151,6 +151,10 @@ video {
 
 
 @media screen and (max-width: 768px) {
+    .max-width {
+        padding: 0 20px;
+    }
+
     .section-banner {
         height: 500px;
     }
@@ -178,11 +182,11 @@ video {
         margin: 0 20px;
     }
 
-        .silder-series img,
-        .slider-single img {
-            width: 100%;
-            height: 400px;
-        }
+    .silder-series img,
+    .slider-single img {
+        width: 100%;
+        height: 400px;
+    }
 
     .section-slider .logo img {
         width: 150px;

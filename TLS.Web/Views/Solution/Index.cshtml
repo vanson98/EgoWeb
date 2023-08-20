@@ -5,8 +5,9 @@
 
 
 @section Headers{
-    <link href="~/css/solution-main.css" rel="stylesheet" />
+    <link href="~/css/solution-1.css" rel="stylesheet" />
     <title>@ViewLocalizer["Title"]</title>
+    <title>Solution - Ego</title>
 }
 <div class="solution-page bg-white black-color">
     <section class="section-talent max-width">
@@ -14,7 +15,7 @@
             <div class="col-lg-1 col-12"></div>
             <div class="col-lg-8 col-12">
                 <p>NĂNG LỰC</p>
-                <p class="heading">
+                <p class="font-64">
                     Tối ưu <span class="primary-color">thời gian & chi phí</span> đạt
                     được mục tiêu kinh doanh của doanh nghiệp
                 </p>
@@ -26,13 +27,13 @@
                 <div class="row align-items-center my-4">
                     <div class="col-lg-7 col-6">
                         <p>01</p>
-                        <p class="font-heading">
+                        <p class="font-32">
                             Giải pháp toàn diện cho doanh nghiệp khởi sự - Easy go
                         </p>
                     </div>
                     <div class="col-lg-2 col-1"></div>
                     <div class="col-lg-2 col-md-2 col-3">
-                        <a href="#">
+                        <a href="/solution-2">
                             <img src="./EgoImages/solution/arrow-circle.png" alt="" />
                         </a>
                     </div>
@@ -42,13 +43,13 @@
                 <div class="row align-items-center my-4">
                     <div class="col-lg-7 col-6">
                         <p>02</p>
-                        <p class="font-heading">
+                        <p class="font-32">
                             Tối ưu các nền tảng truyền thông sở hữu
                         </p>
                     </div>
                     <div class="col-lg-2 col-1"></div>
                     <div class="col-lg-2 col-md-2 col-3">
-                        <a href="#">
+                        <a href="/solution-3">
                             <img src="./EgoImages/solution/arrow-circle.png" alt="" />
                         </a>
                     </div>
@@ -58,13 +59,13 @@
                 <div class="row align-items-center my-4">
                     <div class="col-lg-7 col-6">
                         <p>03</p>
-                        <p class="font-heading">
+                        <p class="font-32">
                             Giải pháp sản xuất video ngắn chuyên sâu Etik Production
                         </p>
                     </div>
                     <div class="col-lg-2 col-1"></div>
                     <div class="col-lg-2 col-md-2 col-3">
-                        <a href="#">
+                        <a href="/solution-4">
                             <img src="./EgoImages/solution/arrow-circle.png" alt="" />
                         </a>
                     </div>
@@ -74,11 +75,11 @@
                 <div class="row align-items-center my-4">
                     <div class="col-lg-7 col-6">
                         <p>04</p>
-                        <p class="font-heading">Phòng Marketing thuê ngoài</p>
+                        <p class="font-32">Phòng Marketing thuê ngoài</p>
                     </div>
                     <div class="col-lg-2 col-1"></div>
                     <div class="col-lg-2 col-md-2 col-3">
-                        <a href="#">
+                        <a href="/solution-5">
                             <img src="./EgoImages/solution/arrow-circle.png" alt="" />
                         </a>
                     </div>
@@ -92,48 +93,43 @@
     </section>
 
     <section class="section-form py-5 max-width">
-        <div class="row">
+        <div class="row gy-3">
             <div class="col-lg-1 col-12"></div>
-            <div class="col-lg-5 col-12 font-heading">
+            <div class="col-lg-5 col-12 font-32">
                 Chia sẻ với chúng tôi thông tin để xây dựng gói dịch vụ phù hợp nhất
                 với doanh nghiệp của bạn tại đây =>
             </div>
             <div class="col-lg-1 col-12"></div>
             <div class="col-lg-5 col-12">
-                <div class="form-wrapper">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name">Họ và tên</label>
-                            <input type="text" class="form-control" id="name" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone"> Số điện thoại liên hệ </label>
-                            <input type="phone" class="form-control" id="phone" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="position">Chức vụ</label>
-                            <input type="text" class="form-control" id="position" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="company">Công ty</label>
-                            <input type="text" class="form-control" id="company" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="job"> Ngành nghề kinh doanh </label>
-                            <input type="text" class="form-control" id="job" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="solution"> Giải pháp quan tâm </label>
-                            <input type="text" class="form-control" id="solution" />
-                        </div>
-                        <div class="mt-4 text-center">
-                            <input type="submit" class="button-primary" value="Submit" />
-                        </div>
-                    </form>
+                <div class="form-mobile">
+                    <div class="form-wrapper">
+                        <form id="contact-form">
+                            <label for="name">@ViewLocalizer["contact4"] </label>
+                            <input type="text" id="name" name="Name" />
+                            <br />
+                            <label for="phone">@ViewLocalizer["contact5"] </label>
+                            <input type="phone" id="phone" name="PhoneNumber" />
+                            <br />
+                            <label for="name">@ViewLocalizer["contact8"] </label>
+                            <input type="text" id="name" name="Position" />
+                            <br />
+                            <label for="name">@ViewLocalizer["contact9"] </label>
+                            <input type="email" id="name" name="email" />
+                            <br />
+                            <label for="name">@ViewLocalizer["contact10"] </label>
+                            <input type="email" id="name" name="Company" />
+                            <br />
+                            <label for="business">@ViewLocalizer["contact6"] </label><br />
+                            <input type="text" id="business" name="BusinessAreas" />
+                            <br />
+                            <label for="business">@ViewLocalizer["contact11"] </label><br />
+                            <input type="text" id="business" name="SolutionOfInterest" />
+                            <br />
+                            <div class="btn-submit">
+                                <input type="button" id="contact_btn_submit" value="Submit" />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,11 +137,11 @@
 
     <section class="section-search py-5 max-width">
         <div class="row align-items-center">
-            <div class="col-lg-4 col-12">
-                <p class="title">Tìm hiểu về Ego agency</p>
+            <div class="col-lg-5 col-12">
+                <p class="font-64">Tìm hiểu về Ego agency</p>
             </div>
-            <div class="col-lg-5 col-12"></div>
-            <div class="col-lg-2 col-12">
+            <div class="col-lg-4 col-12"></div>
+            <div class="col-lg-2 col-6">
                 <a href="" class="py-4">
                     <img src="./EgoImages/about/arrow-blue.png" alt="" />
                 </a>
@@ -153,3 +149,31 @@
         </div>
     </section>
 </div>
+
+
+@section Scripts{
+    <script>
+        $("#contact_btn_submit").on("click", function () {
+            debugger
+            var formData = new FormData($("#contact-form")[0]);
+            var formDataJson = Object.fromEntries(formData);
+            $.ajax({
+                url: '/Contact/AddContact',
+                type: 'POST',
+                processData: false, // without any attempt to modify it by encoding as a query string
+                contentType: false, // forcing jQuery not to add a Content-Type header for you,
+                data: formData,
+                success: function (res) {
+                    if (res.status == 200) {
+                        // clear form
+                    }
+                    alert(res.message);
+                },
+                error: function (res) {
+                    alert("Error!");
+                }
+            })
+        });
+        $("#app-footer").hide();
+    </script>
+}
