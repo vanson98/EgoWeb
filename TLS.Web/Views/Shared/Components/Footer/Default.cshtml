@@ -4,9 +4,9 @@
 @inject LocalizationService LocalizationService
 @inject IViewLocalizer ViewLocalizer
 
-<section class="footer max-width" id="app-footer">
+<section class="footer" id="app-footer" style="max-width: 1440px; margin: 0 auto;">
     <div class="row">
-        <div class="col-lg-6 col-md-12 col-12">
+   @*     <div class="col-lg-6 col-md-12 col-12">
             @if(Thread.CurrentThread.CurrentCulture.Name == "vi")
             {
                 <div>
@@ -40,6 +40,68 @@
                         <a href="/contact" class="link-redirect">
                             <img src="~/EgoImages/arrow.png" alt="" />
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+
+        <div class="col-lg-4 col-md-12 col-12">
+            <div class="row  align-items-end">
+                <div class="col-lg-4 col-12 mt-2">
+                    <img src="./EgoImages/logo.png" />
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="row align-items-end">
+                        <div class="col-lg-4 col-12">
+                            <a href="/about"><p>About</p></a>
+                            <a href="/work"><p>Word</p></a>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <a href="/blog"><p>Blog</p></a>
+                            <a href="/contact"><p>Contact</p></a>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <p></p>
+                            <a href="/solution"><p>Solution</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 col-md-12 col-12">
+            <div class="row gx-4">
+                <div class="col-lg-1 col-12"></div>
+                <div class="col-lg-3 col-12">
+                    <p class="font-heading">Reach us</p>
+                    <div class="d-flex gap-2">
+                        <img class="icon-footer"
+                             src="./EgoImages/icon/facebook.png" />
+                        <img class="icon-footer"
+                             src="./EgoImages/icon/instagram.png" />
+                        <img class="icon-footer" src="./EgoImages/icon/in.png" />
+                        <img class="icon-footer" src="./EgoImages/icon/youtube.png" />
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <p class="font-heading">Meet us</p>
+                    <div class="d-flex">122 Vĩnh Tuy, Hai Bà Trưng, HN</div>
+                </div>
+
+                <div class="col-lg-2 col-12">
+                    <p class="font-heading">Call us</p>
+                    <div class="d-flex">09687450325</div>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <p class="font-heading">Talk now</p>
+                    <div class="d-flex gap-2">
+                        <img class="icon-footer" src="./EgoImages/icon/zalo.png" />
+                        <img class="icon-footer"
+                             src="./EgoImages/icon/messenger.png" />
+                        <img class="icon-footer" src="./EgoImages/icon/email.png" />
                     </div>
                 </div>
             </div>
