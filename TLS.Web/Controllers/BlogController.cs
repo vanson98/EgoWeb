@@ -19,7 +19,7 @@ namespace TLS.Web.Controllers
 
 
 
-        [Route("/blogs")]
+        [Route("/kien-thuc-marketing-branding")]
         public async Task<IActionResult> Index(string tag, int pageIndex = 1, int pageSize = 5)
         {
             var model = await _newService.GetNewsPageVm(new ViewModels.News.SiteNewsPageRequest()
@@ -31,7 +31,7 @@ namespace TLS.Web.Controllers
             return View(model);
         }
 
-        [Route("/blogs/{blogSeoName}")]
+        [Route("/kien-thuc-marketing-branding/{blogSeoName}")]
         public async Task<IActionResult> Detail(string blogSeoName)
         {
             if (int.TryParse(blogSeoName.Split("-").Last(), out int blogId))

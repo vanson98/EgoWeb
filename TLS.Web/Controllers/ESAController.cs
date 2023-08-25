@@ -4,7 +4,7 @@ namespace TLS.Web.Controllers
 {
     public class ESAController : Controller
     {
-        [Route("/esa-english")]
+        [Route("/du-an/thiet-ke-bo-nhan-dien-thuong-hieu-giao-duc-tieng-anh")]
         public IActionResult Index()
         {
             return View();

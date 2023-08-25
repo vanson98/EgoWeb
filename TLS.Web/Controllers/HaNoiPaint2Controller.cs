@@ -4,7 +4,7 @@ namespace TLS.Web.Controllers
 {
     public class HaNoiPaint2Controller : Controller
     {
-        [Route("/hanoi-paint-social")]
+        [Route("/du-an/tang-chuyen-doi-doanh-thu-nho-trien-khai-social-marketing-nganh-vat-lieu-xay-dung")]
         [HttpGet]
         public IActionResult Index()
         {

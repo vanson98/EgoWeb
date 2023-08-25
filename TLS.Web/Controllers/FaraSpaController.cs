@@ -4,7 +4,7 @@ namespace TLS.Web.Controllers
 {
     public class FaraSpaController : Controller
     {
-        [Route("/fara-spa")]
+        [Route("/du-an/social-marketing-nganh-my-pham")]
         [HttpGet]
         public IActionResult Index()
         {

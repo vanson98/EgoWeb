@@ -5,7 +5,7 @@ namespace TLS.Web.Controllers
     public class Solution5Controller : Controller
     {
 
-        [Route("/solution-5")]
+        [Route("/giai-phap-marketing-toan-dien/video-marketing-tron-goi-ha-noi")]
         public IActionResult Index()
         {
             return View();

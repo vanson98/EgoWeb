@@ -21,7 +21,7 @@ namespace TLS.Web.Controllers
             _localizationService = localizationService;
         }
 
-        [Route("/about")]
+        [Route("/branding-markeitng-agency-hanoi")]
         public IActionResult Index()
         {
             // SEO
