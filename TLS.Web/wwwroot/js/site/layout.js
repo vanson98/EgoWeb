@@ -14,7 +14,7 @@
     }
 
     btnSwitch.addEventListener("click", function () {
-        const initialText = 'ENG';
+        const initialText = 'VN';
 
         if (btnSwitch.textContent.includes(initialText)) {
             btnSwitch.textContent = initialText;
@@ -26,7 +26,7 @@
     });
 
     btnSwitch2.addEventListener("click", function () {
-        const initialText = 'ENG';
+        const initialText = 'VN';
 
         if (btnSwitch2.textContent.includes(initialText)) {
             
@@ -57,4 +57,26 @@
     });
 
     AOS.init();
+
+    $("#contact_btn_submit").on("click", function () {
+        debugger
+        var formData = new FormData($("#contact-form")[0]);
+        var formDataJson = Object.fromEntries(formData);
+        $.ajax({
+            url: '/Contact/AddContact',
+            type: 'POST',
+            processData: false, // without any attempt to modify it by encoding as a query string
+            contentType: false, // forcing jQuery not to add a Content-Type header for you,
+            data: formData,
+            success: function (res) {
+                if (res.status == 200) {
+                    // clear form
+                }
+                alert(res.message);
+            },
+            error: function (res) {
+                alert("Error!");
+            }
+        })
+    });
 })

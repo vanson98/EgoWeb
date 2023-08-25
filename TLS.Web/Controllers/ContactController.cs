@@ -28,6 +28,14 @@ namespace TLS.Web.Controllers
         [HttpPost]
         public IActionResult AddContact([FromForm] AddContactDto input)
         {
+            if(string.IsNullOrEmpty(input.Name) || string.IsNullOrEmpty(input.PhoneNumber))
+            {
+                return Json(new
+                {
+                    Status = 200,
+                    Message = "Vui lòng điền tên và số điện thoại!"
+                });
+            }
             var result = _contactService.Add(new Contact()
             {
                 Name = input.Name,

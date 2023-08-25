@@ -6,6 +6,7 @@
 
 @section Headers{
     <link href="~/css/solution-5.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css" rel="stylesheet" />
     <title>@ViewLocalizer["Title"]</title>
 }
 <div class="solution-5">
@@ -30,9 +31,7 @@
     <section class="section-video">
         <div class="max-width">
             <div class="video-wrapper">
-                <video width="100%" height="100%" controls>
-                    <source src="movie.mp4" type="video/mp4" />
-                </video>
+                <iframe width="100%" height="700" src="https://www.youtube.com/embed/1WZRuTqSv2M?si=vrb3drfhQas5p7su" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-12">
@@ -181,38 +180,6 @@
     </section>
 
     <section class="section-slider max-width">
-        <div class="silder-series">
-            <div class="logo">
-                <img src="./EgoImages/solution-5/logo-sonha.png" />
-            </div>
-            <div class="mb-5">
-                Dự án : Chuỗi video giới thiệu sản phẩm bình thái dương
-                năng...…………..
-                <br />
-                Nền tảng : Facebook Reels
-            </div>
-            <swiper-container class="swiperSeries" init="false">
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-            </swiper-container>
-        </div>
-
         <div class="slider-single mt-5 pt-5">
             <div class="logo">
                 <img src="./EgoImages/solution-5/logo-sonha.png" />
@@ -223,23 +190,38 @@
                 <br />
                 Nền tảng : Facebook Reels
             </div>
-            <swiper-container navigation="true">
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-                <swiper-slide>
-                    <img src="./EgoImages/solution/solution.png" />
-                </swiper-slide>
-            </swiper-container>
+            <div class="gallery-slider">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                      @*  <div class="swiper-slide">
+                            <iframe id="player0" width="612" height="345" src="https://www.youtube.com/embed/V2cF4uE0mXs?enablejsapi=1&html5=1&rel=0" frameborder="0" allowfullscreen iframe-video></iframe>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <iframe id="player1" width="612" height="345" src="https://www.youtube.com/embed/xvJRCI9ERsQ?enablejsapi=1&html5=1&rel=0" frameborder="0" allowfullscreen iframe-video></iframe>
+                        </div>*@
+
+                        <div class="swiper-slide">
+                            <iframe id="player0" width="100%" height="450" src="https://www.youtube.com/embed/3eJdCJTP-6U?si=LHctytbxKgOKhUY5" frameborder="0" allowfullscreen iframe-video></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe id="player1" width="100%" height="450" src="https://www.youtube.com/embed/YCDHGRXatWE?si=DyZ3uhzS9Qu0SDIG" frameborder="0" allowfullscreen iframe-video></iframe>
+                        </div>
+                        <div class="swiper-slide">
+                            <iframe id="player2" width="100%" height="450" src="https://www.youtube.com/embed/XcfeizGFRxk?si=qfpqCFTngHExXvvt" frameborder="0" allowfullscreen iframe-video></iframe>
+                        </div>
+                       <div class="swiper-slide">
+                            <iframe id="player3" width="100%" height="450" src="https://www.youtube.com/embed/xQt1alesqxE?si=iyXYIvALjc28FSfi" frameborder="0" allowfullscreen iframe-video></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Add Arrows -->
+                <div class="swiper-button-next -dark" video-buttons></div>
+                <div class="swiper-button-prev -dark" video-buttons></div>
+            </div>
         </div>
     </section>
 
@@ -332,25 +314,25 @@
                     <div class="form-mobile">
                         <div class="form-wrapper">
                             <form id="contact-form">
-                                <label for="name">@ViewLocalizer["contact4"] </label>
+                                <label for="name">@LocalizationService.GetLocalizedString("contact-name")</label>
                                 <input type="text" id="name" name="Name" />
                                 <br />
-                                <label for="phone">@ViewLocalizer["contact5"] </label>
+                                <label for="phone">@LocalizationService.GetLocalizedString("contact-phone") </label>
                                 <input type="phone" id="phone" name="PhoneNumber" />
                                 <br />
-                                <label for="name">@ViewLocalizer["contact8"] </label>
+                                <label for="name">@LocalizationService.GetLocalizedString("contact-position") </label>
                                 <input type="text" id="name" name="Position" />
                                 <br />
-                                <label for="name">@ViewLocalizer["contact9"] </label>
+                                <label for="name">@LocalizationService.GetLocalizedString("contact-email")</label>
                                 <input type="email" id="name" name="email" />
                                 <br />
-                                <label for="name">@ViewLocalizer["contact10"] </label>
+                                <label for="name">@LocalizationService.GetLocalizedString("contact-company")</label>
                                 <input type="email" id="name" name="Company" />
                                 <br />
-                                <label for="business">@ViewLocalizer["contact6"] </label><br />
+                                <label for="business">@LocalizationService.GetLocalizedString("contact-business")</label><br />
                                 <input type="text" id="business" name="BusinessAreas" />
                                 <br />
-                                <label for="business">@ViewLocalizer["contact11"] </label><br />
+                                <label for="business">@LocalizationService.GetLocalizedString("contact-solution-of-interest")</label><br />
                                 <input type="text" id="business" name="SolutionOfInterest" />
                                 <br />
                                 <div class="btn-submit">
@@ -366,30 +348,49 @@
 </div>
 
 @section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+  
     <script>
-        const swiperEl = document.querySelector(".swiperSeries");
-        Object.assign(swiperEl, {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            navigation: true,
-            loop: true,
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
+        document.addEventListener("DOMContentLoaded", function () {
+            gallerySliderSwiper();
         });
-        swiperEl.initialize();
+
+        function gallerySliderSwiper() {
+            var gallerySliderSwiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                effect: "fade",
+                fadeEffect: {
+                    crossFade: true
+                },
+            })
+        }
+
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        function onYouTubeIframeAPIReady(id) {
+            let player = document.querySelectorAll('[iframe-video]');
+            let buttons = document.querySelectorAll('[video-buttons]');
+
+            player.forEach(item => {
+                var itemElem = item.dataset.videoLink;
+                itemElem = new YT.Player(item, {
+                    videoId: 'V2cF4uE0mXs'
+                });
+
+                buttons.forEach(item => {
+                    item.addEventListener('click', function (e) {
+                        itemElem.pauseVideo();
+                    });
+                });
+            })
+        }
+
     </script>
 
 }

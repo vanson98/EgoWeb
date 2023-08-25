@@ -1,4 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using TLS.Web.Resources;
+@inject LocalizationService LocalizationService
 @inject IViewLocalizer ViewLocalizer
 @section Headers{
     <link href="~/css/contact.css" rel="stylesheet" />
@@ -31,25 +33,25 @@
                         <div>@ViewLocalizer["contact3"] </div>
                         <br />
                         <form id="contact-form">
-                            <label for="name">@ViewLocalizer["contact4"] </label>
+                            <label for="name">@LocalizationService.GetLocalizedString("contact-name")</label>
                             <input type="text" id="name" name="Name" />
                             <br />
-                            <label for="phone">@ViewLocalizer["contact5"] </label>
+                            <label for="phone">@LocalizationService.GetLocalizedString("contact-phone") </label>
                             <input type="phone" id="phone" name="PhoneNumber" />
                             <br />
-                            <label for="name">@ViewLocalizer["contact8"] </label>
+                            <label for="name">@LocalizationService.GetLocalizedString("contact-position") </label>
                             <input type="text" id="name" name="Position" />
                             <br />
-                            <label for="name">@ViewLocalizer["contact9"] </label>
+                            <label for="name">@LocalizationService.GetLocalizedString("contact-email")</label>
                             <input type="email" id="name" name="email" />
                             <br />
-                            <label for="name">@ViewLocalizer["contact10"] </label>
+                            <label for="name">@LocalizationService.GetLocalizedString("contact-company")</label>
                             <input type="email" id="name" name="Company" />
                             <br />
-                            <label for="business">@ViewLocalizer["contact6"] </label><br />
+                            <label for="business">@LocalizationService.GetLocalizedString("contact-business")</label><br />
                             <input type="text" id="business" name="BusinessAreas" />
                             <br />
-                            <label for="business">@ViewLocalizer["contact11"] </label><br />
+                            <label for="business">@LocalizationService.GetLocalizedString("contact-solution-of-interest")</label><br />
                             <input type="text" id="business" name="SolutionOfInterest" />
                             <br />
                             <div class="btn-submit">
@@ -74,27 +76,8 @@
 
 @section Scripts{
     <script>
-        $("#contact_btn_submit").on("click", function () {
-            debugger
-            var formData = new FormData($("#contact-form")[0]);
-            var formDataJson = Object.fromEntries(formData);
-            $.ajax({
-                url: '/Contact/AddContact',
-                type: 'POST',
-                processData: false, // without any attempt to modify it by encoding as a query string
-                contentType: false, // forcing jQuery not to add a Content-Type header for you,
-                data: formData,
-                success: function (res) {
-                    if (res.status == 200) {
-                        // clear form
-                    }
-                    alert(res.message);
-                },
-                error: function (res) {
-                    alert("Error!");
-                }
-            })
-        });
+       
         $("#app-footer").hide();
     </script>
 }
+
