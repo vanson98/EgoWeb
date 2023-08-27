@@ -83,8 +83,15 @@
     var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
         backdrop: "static"
     })
+    
     $("#close-modal-btn").on("click", function () {
+        
         myModal.hide();
     })
-    myModal.show()
+    var isShowModal = sessionStorage.getItem("isShowModal")
+    if (window.location.pathname == "/" && isShowModal == null) {
+        myModal.show()
+        //sessionStorage.setItem("isShowModal", "true")
+    }
+   
 })
