@@ -59,7 +59,6 @@
     AOS.init();
 
     $("#contact_btn_submit").on("click", function () {
-        debugger
         var formData = new FormData($("#contact-form")[0]);
         var formDataJson = Object.fromEntries(formData);
         $.ajax({
@@ -79,4 +78,13 @@
             }
         })
     });
+
+
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'), {
+        backdrop: "static"
+    })
+    $("#close-modal-btn").on("click", function () {
+        myModal.hide();
+    })
+    myModal.show()
 })
