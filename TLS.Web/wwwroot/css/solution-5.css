@@ -149,6 +149,14 @@ video {
     background-color: var(--black-color);
 }
 
+.footer {
+    color: #000 !important;
+    background: #fff !important;
+}
+
+.footer a, .footer a:hover {
+    color: #000 !important;
+}
 
 @media screen and (max-width: 768px) {
     .max-width {

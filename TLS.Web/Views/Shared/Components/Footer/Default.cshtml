@@ -6,50 +6,52 @@
 
 <section class="footer" id="app-footer" style="max-width: 1440px; margin: 0 auto;">
     <div class="row">
-   @*     <div class="col-lg-6 col-md-12 col-12">
-            @if(Thread.CurrentThread.CurrentCulture.Name == "vi")
-            {
-                <div>
-                    Đừng ngần ngại <br> kết nối với chúng tôi <br> để nhận tư vấn 
-                </div>
-            }
-            else
-            {
-                <div class="h2">
-                    you feel 
-                    <br />
-                    <span class="primary-color"> interested </span>
-                </div>
-            }
-            
+        @*     <div class="col-lg-6 col-md-12 col-12">
+        @if(Thread.CurrentThread.CurrentCulture.Name == "vi")
+        {
+        <div>
+        Đừng ngần ngại <br> kết nối với chúng tôi <br> để nhận tư vấn
+        </div>
+        }
+        else
+        {
+        <div class="h2">
+        you feel
+        <br />
+        <span class="primary-color"> interested </span>
+        </div>
+        }
+
         </div>
         <div class="col-lg-6 col-md-12 col-12">
-            <div class="right-footer">
-                <div class="row align-items-center">
-                    <div class="col-4">
-                        <div class="title">Reach us</div>
-                        <div><a href="https://www.facebook.com/egoagency.vn">Facebook</a></div>
-                        <div><a href="https://www.behance.net/agencyego">Behance</a></div>
-                    </div>
-                    <div class="col-4">
-                        <div class="title">Meet us</div>
-                        <div>@ViewLocalizer["ft3"]</div>
-                        <div>@ViewLocalizer["ft4"]</div>
-                    </div>
-                    <div class="col-4">
-                        <a href="/contact" class="link-redirect">
-                            <img src="~/EgoImages/arrow.png" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="right-footer">
+        <div class="row align-items-center">
+        <div class="col-4">
+        <div class="title">Reach us</div>
+        <div><a href="https://www.facebook.com/egoagency.vn">Facebook</a></div>
+        <div><a href="https://www.behance.net/agencyego">Behance</a></div>
+        </div>
+        <div class="col-4">
+        <div class="title">Meet us</div>
+        <div>@ViewLocalizer["ft3"]</div>
+        <div>@ViewLocalizer["ft4"]</div>
+        </div>
+        <div class="col-4">
+        <a href="/contact" class="link-redirect">
+        <img src="~/EgoImages/arrow.png" alt="" />
+        </a>
+        </div>
+        </div>
+        </div>
         </div>*@
 
 
         <div class="col-lg-4 col-md-12 col-12">
             <div class="row  align-items-end">
                 <div class="col-lg-4 col-12 mt-2">
-                    <img src="~/EgoImages/logo.png" />
+                    <a href="">
+                        <img src="~/EgoImages/logo.png" />  
+                    </a>
                 </div>
                 <div class="col-lg-8 col-12">
                     <div class="row align-items-end">
@@ -75,13 +77,22 @@
                 <div class="col-lg-1 col-12"></div>
                 <div class="col-lg-3 col-12">
                     <p class="font-heading">Reach us</p>
-                    <div class="d-flex gap-2">
-                        <img class="icon-footer"
-                             src="~/EgoImages/icon/facebook.png" />
-                        <img class="icon-footer"
-                             src="~/EgoImages/icon/instagram.png" />
-                        <img class="icon-footer" src="~/EgoImages/icon/in.png" />
-                        <img class="icon-footer" src="~/EgoImages/icon/youtube.png" />
+                    <div class="d-flex gap-1">
+                        <a href="https://www.facebook.com/egoagency.vn">
+                            <img class="icon-footer" src="~/EgoImages/icon/facebook.png" />
+                        </a>
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/instagram.png" />
+                        </a>
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/in.png" />
+                        </a>
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/instagram.png" />
+                        </a>
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/youtube.png" />
+                        </a>
                     </div>
                 </div>
 
@@ -98,10 +109,15 @@
                 <div class="col-lg-3 col-12">
                     <p class="font-heading">Talk now</p>
                     <div class="d-flex gap-2">
-                        <img class="icon-footer" src="~/EgoImages/icon/zalo.png" />
-                        <img class="icon-footer"
-                             src="~/EgoImages/icon/messenger.png" />
-                        <img class="icon-footer" src="~/EgoImages/icon/email.png" />
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/zalo.png" />
+                        </a>
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/messenger.png" />
+                        </a>
+                        <a href="">
+                            <img class="icon-footer" src="~/EgoImages/icon/email.png" />
+                        </a>
                     </div>
                 </div>
             </div>

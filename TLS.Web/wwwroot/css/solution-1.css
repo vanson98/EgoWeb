@@ -85,3 +85,12 @@ img {
         padding: 0 20px;
     }
 }
+
+.footer {
+    color: #000!important;
+    background: #fff !important;
+}
+
+.footer a, .footer a:hover {
+    color: #000 !important;
+}

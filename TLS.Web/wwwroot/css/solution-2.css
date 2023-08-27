@@ -1,5 +1,27 @@
-﻿.section-banner {
-    height: 850px;
+﻿
+/* override */
+.logo-ego {
+    right: 0!important;
+    position: absolute!important;
+}
+
+.menu {
+    top: 150px;
+    padding: 0 25px;
+}
+
+.footer {
+    background: #fff;
+}
+
+.footer, .footer a, .footer a:hover {
+    color: var(--black-color) !important;
+}
+
+
+/* solution */
+.section-banner {
+    height: 750px;
 }
 
 .section-banner img {
