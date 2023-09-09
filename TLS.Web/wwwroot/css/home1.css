@@ -328,6 +328,37 @@ nav ul .nav-link:hover {
         margin-bottom: 0;
     }
 
+    .section-header {
+        margin: 40px auto;
+    }
+
+    .section-header .heading {
+        font-size: 62px;
+    }
+
+    .hello-wrapper {
+        left: 52%;
+        top: -4%;
+        width: 39%;
+    }
+
+    .section-marketing .heading {
+        font-size: 42px;
+    }
+
+    .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+
+    .font-38 {
+        font-size: 22px;
+    }
+
+    .section-form .title {
+        font-size: 22px;
+    }
+
     /* value number */
     .item-1 {
         grid-column-start: 1;

@@ -18,6 +18,11 @@
     background-image: url("../EgoImages/solution-3/banner-2.png");
 }
 
+.section-effective {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 .card-customer .image {
     height: 130px;
     width: 130px;
@@ -74,6 +79,15 @@
 
 .card-project img {
     object-fit: cover;
+}
+
+/* about-customer */
+.about-customer {
+    margin: 9rem auto;
+}
+
+.about-customer .title {
+    margin-bottom: 6rem;
 }
 
 /* we-want */
@@ -194,6 +208,11 @@
         height: 500px;
     }
 
+    .section-effective {
+        padding-top: 0;
+        padding-bottom: 2rem;
+    }
+
     .decor {
         display: none;
     }
@@ -208,6 +227,15 @@
 
     .card-project .image {
         height: 300px;
+    }
+
+    /* about-customer */
+    .about-customer {
+        margin: 5rem auto;
+    }
+
+    .about-customer .title {
+        margin-bottom: 2rem;
     }
 
     /* we-want */

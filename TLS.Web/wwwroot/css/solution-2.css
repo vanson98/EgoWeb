@@ -32,9 +32,14 @@
     margin: 100px 20px;
 }
 
-video {
+.video-wrapper iframe {
     border-radius: 20px;
     overflow: hidden;
+    height: 700px;
+}
+
+.five-math {
+    padding: 4rem;
 }
 
 .section-implement .step {
@@ -118,8 +123,15 @@ video {
     border-radius: 50%;
 }
 
-/* we-want */
+/* about-customer */
+.about-customer {
+    margin: 9rem auto;
+}
 
+.about-customer .title {
+    margin-bottom: 6rem;
+}
+/* we-want */
 .we-want .heading {
     color: #707070;
     line-height: 120%;
@@ -234,19 +246,43 @@ video {
         margin: 40px 0px;
     }
 
-    video {
-        height: 280px;
+    .video-wrapper iframe {
+        height:400px;
         border-radius: 8px;
+    }
+
+    .five-math {
+        padding: 2rem 1.5rem;
+    }
+
+    .five-math .mb-5{
+        margin-bottom: 1.5rem !important;
+    }
+
+    .five-math .mt-5 {
+        margin-top: 1.5rem !important;
+    }
+
+    .section-implement .title {
+        top: 0;
     }
 
     .section-implement .step {
         flex-direction: column;
+        top: 175px;
+    }
+
+    .section-implement .card-step {
+        padding: 0;
     }
 
     .section-implement .step .card-step:nth-child(2) {
         border: none;
     }
 
+    .sectioc-idea {
+        padding-top: 270px;
+    }
 
     /* customer*/
     .section-handle {
@@ -255,6 +291,15 @@ video {
 
     .card-project .image {
         height: 300px;
+    }
+
+    /* about-customer */
+    .about-customer {
+        margin: 5rem auto;
+    }
+
+    .about-customer .title {
+        margin-bottom: 2rem;
     }
 
     /* we-want */

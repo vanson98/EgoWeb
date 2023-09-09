@@ -37,9 +37,10 @@
     margin: 100px 20px;
 }
 
-video {
+.video-wrapper iframe {
     border-radius: 20px;
     overflow: hidden;
+    height: 700px;
 }
 
 .section-etik {
@@ -171,8 +172,8 @@ video {
         margin: 40px 0px;
     }
 
-    video {
-        height: 280px;
+    .video-wrapper iframe {
+        height: 400px;
         border-radius: 8px;
     }
 
@@ -202,6 +203,15 @@ video {
 
     .section-customer {
         padding: 50px 0px;
+    }
+
+    .section-project,
+    .h-100 {
+        height: auto !important;
+    }
+
+    .hidden-mobile {
+        display: none;
     }
 }
 

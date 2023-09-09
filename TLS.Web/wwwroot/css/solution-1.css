@@ -28,6 +28,16 @@ img {
     width: 100%;
 }
 
+.footer {
+    color: #000 !important;
+    background: #fff !important;
+}
+
+.footer a, .footer a:hover {
+    color: #000 !important;
+}
+
+
 /* form css*/
 .section-form .title {
     font-size: 52px;
@@ -84,13 +94,8 @@ img {
     .max-width {
         padding: 0 20px;
     }
-}
 
-.footer {
-    color: #000!important;
-    background: #fff !important;
-}
-
-.footer a, .footer a:hover {
-    color: #000 !important;
+    .footer-logo {
+        width: 35%;
+    }
 }

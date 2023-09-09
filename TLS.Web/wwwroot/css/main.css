@@ -283,6 +283,10 @@ ul {
     place-content: center;
 }
 
+.footer {
+    padding: 70px;
+}
+
 @media screen and (max-width: 1160px) {
     .menu {
         display: none;
@@ -322,7 +326,7 @@ ul {
     }
 
     .footer {
-        padding: 4rem 20px 2rem;
+        padding: 3rem 20px 3rem;
         font-size: 12px;
     }
 
