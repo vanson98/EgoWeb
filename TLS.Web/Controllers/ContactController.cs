@@ -28,12 +28,12 @@ namespace TLS.Web.Controllers
         [HttpPost]
         public IActionResult AddContact([FromForm] AddContactDto input)
         {
-            if(string.IsNullOrEmpty(input.Name) || string.IsNullOrEmpty(input.PhoneNumber))
+            if(string.IsNullOrEmpty(input.Email) && string.IsNullOrEmpty(input.PhoneNumber))
             {
                 return Json(new
                 {
-                    Status = 200,
-                    Message = "Vui lòng điền tên và số điện thoại!"
+                    Status = 500,
+                    Message = "Vui lòng điền email hoặc số điện thoại!"
                 });
             }
             var result = _contactService.Add(new Contact()
@@ -59,7 +59,7 @@ namespace TLS.Web.Controllers
             {
                 return Json(new
                 {
-                    Status = 200,
+                    Status = 500,
                     Message = _localizationService.GetLocalizedString("AddContactFailMessage").Value
                 });
             }

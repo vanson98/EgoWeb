@@ -4,7 +4,7 @@ namespace TLS.Web.Controllers
 {
     public class SimpleCloset1Controller : Controller
     {
-        [Route("/closet-1")]
+        [Route("/simple-closet-1")]
         [HttpGet]
         public IActionResult Index()
         {
