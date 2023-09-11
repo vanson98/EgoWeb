@@ -74,7 +74,7 @@
 }
 
 .card-project .image {
-    height: 400px;
+    height: 225px;
 }
 
 .card-project img {
@@ -209,11 +209,11 @@
     color: #000 !important;
 }
 
-.diagram-mobile {
+.diagram-mobile, banner-mobile {
     display: none;
 }
 
-.diagram-desktop {
+.diagram-desktop, .banner-desktop {
     display: block;
 }
 
@@ -302,13 +302,17 @@
         width: 160px;
     }
 
-    .diagram-mobile {
+    .diagram-mobile, .banner-mobile {
         display: block;
         max-width: 278px;
-        margin: 0 auto;
     }
 
-    .diagram-desktop {
+    .banner-mobile {
+        margin: 0 auto;
+        max-width: 360px;
+    }
+
+    .diagram-desktop, .banner-desktop {
         display: none;
     }
 }

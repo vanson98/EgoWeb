@@ -145,8 +145,7 @@
 
     .diagram-mobile {
         display: block;
-        max-width: 278px;
-        margin: 0 auto;
+        max-width: 350px;
     }
 
     .diagram-desktop {

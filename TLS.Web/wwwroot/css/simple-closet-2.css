@@ -43,6 +43,10 @@ section {
         background-color: var(--primary-color);
     }
 
+.video-wrapper iframe {
+    height: 450px;
+}
+
 @media screen and (max-width: 768px) {
     /* common */
     section {

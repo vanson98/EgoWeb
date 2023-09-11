@@ -58,12 +58,12 @@ ul {
 }
 
 .font-64 {
-    font-size: 54px;
+    font-size: 58px;
     line-height: 120%;
 }
 
 .font-32 {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 120%;
 }
 
@@ -77,6 +77,10 @@ ul {
 
 .black-color {
     color: #000;
+}
+
+.white-color {
+    color: #fff;
 }
 
 .button-primary {
