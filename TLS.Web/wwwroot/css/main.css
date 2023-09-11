@@ -4,7 +4,7 @@
     --black-color: #000;
     --transition: 0.3s all linear;
     --background-color: #000;
-    --font-family: "Epilogue";
+    --font-family: 'Manrope', sans-serif;
 }
 
 * {

@@ -102,6 +102,14 @@
     background-color: var(--black-color);
 }
 
+.diagram-mobile {
+    display: none;
+}
+
+.diagram-desktop {
+    display: block;
+}
+
 @media screen and (max-width: 768px) {
     .section-banner {
         height: 500px;
@@ -133,6 +141,16 @@
 
     .about-customer .title {
         margin-bottom: 2rem;
+    }
+
+    .diagram-mobile {
+        display: block;
+        max-width: 278px;
+        margin: 0 auto;
+    }
+
+    .diagram-desktop {
+        display: none;
     }
 }
 

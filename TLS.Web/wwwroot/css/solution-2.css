@@ -123,6 +123,14 @@
     border-radius: 50%;
 }
 
+.card-customer .info {
+    flex: 1;
+}
+
+.card-customer .info .desc {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
 /* about-customer */
 .about-customer {
     margin: 9rem auto;

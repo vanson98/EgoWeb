@@ -90,6 +90,15 @@
     margin-bottom: 6rem;
 }
 
+.card-customer .info {
+    flex: 1;
+}
+
+.card-customer .info .desc {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
 /* we-want */
 
 .we-want .heading {
@@ -199,7 +208,16 @@
 .footer a, .footer a:hover {
     color: #000 !important;
 }
-@media screen and (max-width: 768px) {
+
+.diagram-mobile {
+    display: none;
+}
+
+.diagram-desktop {
+    display: block;
+}
+
+@media screen and (max-width: 1060px) {
     .max-width {
         padding: 0 20px;
     }
@@ -282,5 +300,15 @@
     .card-customer .image {
         height: 160px;
         width: 160px;
+    }
+
+    .diagram-mobile {
+        display: block;
+        max-width: 278px;
+        margin: 0 auto;
+    }
+
+    .diagram-desktop {
+        display: none;
     }
 }
