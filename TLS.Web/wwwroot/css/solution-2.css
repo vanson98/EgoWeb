@@ -24,6 +24,14 @@
     height: 750px;
 }
 
+.banner-desktop {
+    display: block;
+}
+
+.banner-mobile {
+    display: none;
+}
+
 .section-banner img {
     object-fit: cover;
 }
@@ -244,6 +252,14 @@
 
     .section-banner {
         height: 500px;
+    }
+
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
     }
 
     .video-wrapper {
