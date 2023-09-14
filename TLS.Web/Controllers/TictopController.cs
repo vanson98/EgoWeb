@@ -2,9 +2,9 @@
 
 namespace TLS.Web.Controllers
 {
-    public class SimpleCloset2Controller : Controller
+    public class TictopController : Controller
     {
-        [Route("/simple-closet-2")]
+        [Route("/du-an/tictop")]
         [HttpGet]
         public IActionResult Index()
         {
