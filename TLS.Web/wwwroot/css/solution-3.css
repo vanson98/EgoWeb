@@ -23,6 +23,18 @@
     padding-bottom: 5rem;
 }
 
+.about-customer-talk {
+    display: flex;
+    gap: 24px;
+}
+
+.card-customer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
 .card-customer .image {
     height: 130px;
     width: 130px;
@@ -292,9 +304,14 @@
         display: none;
     }
 
+    .about-customer-talk {
+        display: block;
+        gap: 16px;
+    }
+
     .card-customer {
-        flex-direction:column;
-        margin-bottom: 20px;
+        flex-direction: column;
+        margin-bottom: 3rem;
     }
 
     .card-customer .image {
