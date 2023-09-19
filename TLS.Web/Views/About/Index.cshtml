@@ -228,32 +228,7 @@
             <div class="col-lg-7 col-12 title">Để cùng làm việc</div>
             <div class="col-lg-5 col-12">
                 <div class="form-mobile">
-                    <form id="contact-form">
-                        <label for="name">@LocalizationService.GetLocalizedString("contact-name")</label>
-                        <input type="text" id="name" name="Name" />
-                        <br />
-                        <label for="phone">@LocalizationService.GetLocalizedString("contact-phone") </label>
-                        <input type="phone" id="phone" name="PhoneNumber" />
-                        <br />
-                        <label for="name">@LocalizationService.GetLocalizedString("contact-position") </label>
-                        <input type="text" id="name" name="Position" />
-                        <br />
-                        <label for="name">@LocalizationService.GetLocalizedString("contact-email")</label>
-                        <input type="email" id="name" name="email" />
-                        <br />
-                        <label for="name">@LocalizationService.GetLocalizedString("contact-company")</label>
-                        <input type="email" id="name" name="Company" />
-                        <br />
-                        <label for="business">@LocalizationService.GetLocalizedString("contact-business")</label><br />
-                        <input type="text" id="business" name="BusinessAreas" />
-                        <br />
-                        <label for="business">@LocalizationService.GetLocalizedString("contact-solution-of-interest")</label><br />
-                        <input type="text" id="business" name="SolutionOfInterest" />
-                        <br />
-                        <div class="btn-submit">
-                            <input type="button" id="contact_btn_submit" value="Submit" />
-                        </div>
-                    </form>
+                    <partial name="_ContactInputForm"></partial>
                 </div>
             </div>
         </div>

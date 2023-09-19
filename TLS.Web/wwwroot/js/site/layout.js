@@ -50,7 +50,6 @@
 
     }
 
-
     toggleBtn.addEventListener("click", function () {
         sidebar.classList.toggle("show-sidebar");
     });
@@ -92,7 +91,6 @@
     
 
     $("#close-modal-btn").on("click", function () {
-
         myModal.hide();
     })
     var isShowModal = sessionStorage.getItem("isShowModal")

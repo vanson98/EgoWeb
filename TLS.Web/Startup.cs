@@ -63,10 +63,10 @@ namespace TLS
             {
                 var supportedCultures = new[]
                 {
-                    new CultureInfo("en"),
+                    //new CultureInfo("en"),
                     new CultureInfo("vi")
                 };
-                options.DefaultRequestCulture = new RequestCulture("en");
+                options.DefaultRequestCulture = new RequestCulture("vi");
                 options.SupportedCultures = supportedCultures;
                 options.SupportedUICultures = supportedCultures;
             });
