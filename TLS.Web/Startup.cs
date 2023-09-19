@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
@@ -26,7 +27,9 @@ using TLS.Service.Catalog;
 using TLS.Service.Common.Storage;
 using TLS.Service.Mapping;
 using TLS.Service.NewsService;
+using TLS.Web.Models;
 using TLS.Web.Resources;
+using Microsoft.AspNetCore.DataProtection;
 
 namespace TLS
 {
@@ -77,6 +80,11 @@ namespace TLS
             services.AddIdentity<AppUser, AppRole>()
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders();
+
+            services.AddDataProtection()
+            .PersistKeysToFileSystem(new System.IO.DirectoryInfo("AppKeys"))
+            //.ProtectKeysWithCertificate(new X509Certificate2());
+            .SetDefaultKeyLifetime(TimeSpan.FromDays(90));
 
             // Config cookie
             services.ConfigureApplicationCookie(options =>

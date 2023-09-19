@@ -175,7 +175,6 @@ namespace TLS.Service.Catalog
                 PageIndex = input.PageIndex,
                 PageSize = input.PageSize
             };
-            string a = "tiếng anh, tư duy, thói quen";
             var project = from n in _repository.GetAll()
                           where (input.Tag == null || n.Tags.Contains(input.Tag.Trim())) && n.IsPublish
                           select new
@@ -193,7 +192,7 @@ namespace TLS.Service.Catalog
                 .Select(p => new SiteNewsVm()
                 {
                     ThumbNailImageLink = $"{AppConsts.NEWS_IMAGE_FOLDER_NAME}/{p.ImageName}",
-                    DetailLink = $"/blogs/{p.Title.GetSeoName()}-{p.Id}",
+                    DetailLink = $"/kien-thuc-marketing-branding/{p.Title.GetSeoName()}-{p.Id}",
                     ShortDescription = p.ShortDescription,
                     Title = p.Title,
                     ThumbNailImageTitle = p.ImageTitle
