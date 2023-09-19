@@ -293,6 +293,10 @@ ul {
     padding: 70px;
 }
 
+.title-popup {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 1160px) {
     .menu {
         display: none;
@@ -359,6 +363,14 @@ ul {
 
     .font-32 {
         font-size: 20px;
+    }
+
+    .modal-wrapper {
+        flex-direction: column !important;
+    }
+
+    .title-popup {
+        font-size: 24px;
     }
 }
 
