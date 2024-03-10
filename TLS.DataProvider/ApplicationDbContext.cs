@@ -35,7 +35,9 @@ namespace TLS.DataProvider
         public DbSet<AppRole> approles { get; set; }
         public DbSet<Contact> contacts  { get; set; }
         public DbSet<News> news  { get; set; }
-       
+        public DbSet<Survey> surveys { get; set; }
+        public DbSet<PlanExecutionInfo> planexecutioninfos { get; set; }
+
 
     }
 }
