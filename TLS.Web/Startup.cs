@@ -30,6 +30,8 @@ using TLS.Service.NewsService;
 using TLS.Web.Models;
 using TLS.Web.Resources;
 using Microsoft.AspNetCore.DataProtection;
+using TLS.Service.SurveyService;
+using TLS.Service.PlanExecution;
 
 namespace TLS
 {
@@ -175,9 +177,13 @@ namespace TLS
             services.AddTransient<IRepository<AppUser>, BaseRepository<AppUser>>();
             services.AddTransient<IAccountService, AccountService>();
             services.AddTransient<IRepository<Contact>, BaseRepository<Contact>>();
+            services.AddTransient<IRepository<Survey>, BaseRepository<Survey>>();
+            services.AddTransient<IRepository<PlanExecutionInfo>, BaseRepository<PlanExecutionInfo>>();
             services.AddTransient<IRepository<News>, BaseRepository<News>>();
             services.AddTransient<INewsService, NewsService>();
             services.AddTransient<IContactService, ContactService>();
+            services.AddTransient<ISurveyService, SurveyService>();
+            services.AddTransient<IPlanExecutionService, PlanExecutionService>();
             services.AddScoped<IStorageService, StorageService>();
         }
     }
