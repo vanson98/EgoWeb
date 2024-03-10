@@ -62,6 +62,9 @@
                     data: 'solutionOfInterest'
                 },
                 {
+                    data: 'purpose'
+                },
+                {
                     data: 'createdDate',
                 },
 

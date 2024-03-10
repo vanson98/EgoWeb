@@ -67,6 +67,7 @@
     function submitContact(formid) {
         var formData = new FormData($(formid)[0]);
         var formDataJson = Object.fromEntries(formData);
+        debugger
         $.ajax({
             url: '/Contact/AddContact',
             type: 'POST',

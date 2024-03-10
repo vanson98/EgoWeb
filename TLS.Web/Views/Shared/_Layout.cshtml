@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="keywords" content="@ViewBag.KeyWords" />
+   @* <meta name="keywords" content="@ViewBag.KeyWords" />
     <meta name="description" content="@ViewBag.Descriptions" />
     <meta property="og:site_name" content="@ViewBag.SiteName" />
     <meta property="og:title" content="@ViewBag.Title" />
     <meta property="og:site_url" content="@ViewBag.SiteUrl" />
     <meta property="og:type" content="@ViewBag.SiteType" />
-    <meta property="og:image" content="@ViewBag.SiteImage" />
+    <meta property="og:image" content="@ViewBag.SiteImage" />*@
     <meta name="google-site-verification" content="-97oijCzFGZ1c1R6FCvL3B9eSum-i3UdV6JES7UTwd0" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -68,6 +68,7 @@
                                 <div class="mb-3">
                                     <input type="phone" id="phone" name="PhoneNumber" class="form-control" placeholder="Số điện thoại" />
                                 </div>
+                                <input type="hidden" name="Purpose" id="purpose" value="Document" />
                                 <button type="button" class="btn btn-primary" id="receive_document_btn_submit">Nhận tài liệu</button>
                             </form>
                         </div>

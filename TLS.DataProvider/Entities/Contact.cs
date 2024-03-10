@@ -14,6 +14,7 @@ namespace TLS.DataProvider.Entities
         public string Email { get; set; }
         public string Company { get; set; }
         public string SolutionOfInterest { get; set; }
+        public string Purpose { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }

@@ -13,6 +13,7 @@ namespace TLS.ViewModels.Contact
         public string Company { get; set; }
         public string SolutionOfInterest { get; set; }
         public string BusinessAreas { get; set; }
+        public string Purpose { get; set; }
 
     }
 }

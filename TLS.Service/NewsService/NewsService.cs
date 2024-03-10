@@ -216,7 +216,9 @@ namespace TLS.Service.Catalog
                     MetaKeyWord = news.MetaKeyWord,
                     MetaTitle = news.MetaTitle,
                     ShortDescription = news.ShortDescription,
+                    ThumnailImageUrl = $"{AppConsts.NEWS_IMAGE_FOLDER_NAME}/{news.ImageFileName}",
                     Tags = news.Tags?.Split(","),
+                    DetailLink = $"/kien-thuc-marketing-branding/{news.Title.GetSeoName()}-{news.Id}",
                     Title = news.Title
                 };
             }

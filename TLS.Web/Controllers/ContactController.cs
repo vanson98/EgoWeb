@@ -46,6 +46,7 @@ namespace TLS.Web.Controllers
                 Email = input.Email,
                 Position = input.Position,
                 SolutionOfInterest = input.SolutionOfInterest,
+                Purpose = input.Purpose,
             });
             if (result != null && result.Id > 0)
             {

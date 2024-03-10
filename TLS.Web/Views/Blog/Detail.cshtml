@@ -1,7 +1,12 @@
 ﻿@using TLS.ViewModels.News
 @model NewsDetailVm
 @section Headers{
+    <meta property="og:title" content="@Model.MetaTitle"/>
+    <meta property="og:description" content="@Model.MetaDescription"/>
+    <meta property="og:image" content="@Model.ThumnailImageUrl"/>
+    <meta property="og:url" content="@Model.DetailLink"/>
     <link href="~/css/blog-detail.css" rel="stylesheet" />
+    
 }
     <div class="home-page relative">
 

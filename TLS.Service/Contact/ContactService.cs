@@ -44,6 +44,7 @@ namespace TLS.Service.Catalog
                                              Position = x.Position,
                                              Email = x.Email,
                                              Company = x.Company,
+                                             Purpose = x.Purpose,
                                          })
                                          .ToListAsync();
 

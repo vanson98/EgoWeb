@@ -19,7 +19,9 @@ namespace TLS.ViewModels.News
         public string MetaDescription { get; set; }
 
         public string Author { get; set; }
+        public string ThumnailImageUrl { get; set; }
         public DateTime CreatedDate { get; set; }
+        public string DetailLink { get; set; }
         public string[] Tags { get; set; }
     }
 }
