@@ -8,7 +8,7 @@ namespace TLS.Common.Enums
     public enum Title
     {
         [EnumDisplayName(DisplayName = "Chủ doanh nghiệp")]
-        BúinessOwner = 1,
+        BusinessOwner = 1,
         [EnumDisplayName(DisplayName = "CEO")]
         CEO = 2,
         [EnumDisplayName(DisplayName = "MarketingManager")]

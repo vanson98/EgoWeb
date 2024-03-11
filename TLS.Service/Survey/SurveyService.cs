@@ -39,13 +39,13 @@ namespace TLS.Service.SurveyService
                                              Id = x.Id,
                                              CustomerName = x.CustomerName,
                                              CompanyName = x.CompanyName,
-                                             BusinessField = x.BusinessField.DisplayName(),
-                                             ConversionMediaChannel = x.ConversionMediaChannel.DisplayName(),
+                                             BusinessField = x.BusinessField != null ? x.BusinessField.DisplayName() : "",
+                                             ConversionMediaChannel = x.ConversionMediaChannel != null ? x.ConversionMediaChannel.DisplayName() : "",
                                              ConversionMediaChannelLink = x.ConversionMediaChannelLink,
                                              CustomerPhone = x.CustomerPhone,
                                              MainMediaChannelLink = x.MainMediaChannelLink,
-                                             MediaChannel = x.MediaChannel.DisplayName(),
-                                             Title = x.Title.DisplayName(),
+                                             MediaChannel = x.MediaChannel != null ? x.MediaChannel.DisplayName() : "",
+                                             Title = x.Title != null ? x.Title.DisplayName() : "",
                                              CreatedDate = x.CreatedDate.ToString("dd/MM/yyyy"),
                                              
                                          })

@@ -170,7 +170,6 @@
                 <br />
                 Bản hoạch định
             </div>
-
             <div class="darker-grotesque-font">
                 <div id="accordion-collapse" data-accordion="collapse">
                     <h2 id="accordion-collapse-heading-1"
@@ -217,10 +216,12 @@
                          aria-labelledby="accordion-collapse-heading-2">
                         <div class="p-5 bg-white">
                             <ul class="list-disc px-5 text-md font-semibold">
-                                <li>Số liệu thị trường về lĩnh vực kinh doanh</li>
-                                <li>Phân khúc thị trường</li>
-                                <li>Lựa chọn thị trường mục tiêu</li>
-                                <li>Lựa chọn khách hàng mục tiêu</li>
+                                <li style="list-style-type: none;margin-left: -18px;">Chân dung khách hàng mục tiêu</li>
+                                <li>Nhân khẩu học</li>
+                                <li>Sở thích - Hành vi - Thói quen</li>
+                                <li>Lý do mua hàng</li>
+                                <li>Rào cản mua hàng</li>
+                                <li>Insign</li>
                             </ul>
                         </div>
                     </div>
@@ -243,10 +244,7 @@
                          aria-labelledby="accordion-collapse-heading-3">
                         <div class="p-5 bg-white">
                             <ul class="list-disc px-5 text-md font-semibold">
-                                <li>Số liệu thị trường về lĩnh vực kinh doanh</li>
-                                <li>Phân khúc thị trường</li>
-                                <li>Lựa chọn thị trường mục tiêu</li>
-                                <li>Lựa chọn khách hàng mục tiêu</li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -269,10 +267,9 @@
                          aria-labelledby="accordion-collapse-heading-4">
                         <div class="p-5 bg-white">
                             <ul class="list-disc px-5 text-md font-semibold">
-                                <li>Số liệu thị trường về lĩnh vực kinh doanh</li>
-                                <li>Phân khúc thị trường</li>
-                                <li>Lựa chọn thị trường mục tiêu</li>
-                                <li>Lựa chọn khách hàng mục tiêu</li>
+                                <li>Định vị thương hiệu</li>
+                                <li>Chiến lược thương hiệu</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -295,10 +292,12 @@
                          aria-labelledby="accordion-collapse-heading-5">
                         <div class="p-5 bg-white">
                             <ul class="list-disc px-5 text-md font-semibold">
-                                <li>Số liệu thị trường về lĩnh vực kinh doanh</li>
-                                <li>Phân khúc thị trường</li>
-                                <li>Lựa chọn thị trường mục tiêu</li>
-                                <li>Lựa chọn khách hàng mục tiêu</li>
+                                <li>Xác lập kênh truyền thông</li>
+                                <li>Xác lập kênh chuyển đồi</li>
+                                <li>Mục tiêu truyền thông & KPI</li>
+                                <li>Mục tiêu chuyển đổi & KPI</li>
+                                <li>Chiến lược nội dung</li>
+                                <li>Timeline hoạt động</li>
                             </ul>
                         </div>
                     </div>
@@ -321,10 +320,7 @@
                          aria-labelledby="accordion-collapse-heading-6">
                         <div class="p-5 bg-white">
                             <ul class="list-disc px-5 text-md font-semibold">
-                                <li>Số liệu thị trường về lĩnh vực kinh doanh</li>
-                                <li>Phân khúc thị trường</li>
-                                <li>Lựa chọn thị trường mục tiêu</li>
-                                <li>Lựa chọn khách hàng mục tiêu</li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -396,23 +392,25 @@
     </div>
 
     <!-- form -->
-    <div class="darker-grotesque-font bg-[url('/EgoImages/plan/bg-form.png')] bg-cover bg-center bg-center bg-blue-300">
+    <div class="darker-grotesque-font bg-[url('/EgoImages/plan/bg-form.png')] bg-cover bg-center bg-center bg-blue-300" id="survey-section">
         <div class="max-w-[1360px] lg:mx-auto mx-5 grid lg:grid-cols-2">
             <div class="lg:text-[66px] text-4xl font-[700] leading-none lg:max-w-[450px] lg:text-white primary-color my-6">
                 Tiến hành Khảo sát & phân tích dữ liệu
             </div>
             <div>
-                <form class="max-w-md mx-auto bg-white p-4 rounded-lg text-center lg:mb-0 mb-4">
+                <form class="max-w-md mx-auto bg-white p-4 rounded-lg text-center lg:mb-0 mb-4" id="survey-form">
                     <div class="mb-5">
                         <input type="text"
                                class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
                                placeholder="Họ và tên anh/chị"
+                               name="CustomerName"
                                required />
                     </div>
                     <div class="mb-5">
                         <input type="tel"
                                class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
                                placeholder="Số điện thoại"
+                               name="CustomerPhone"
                                required />
                     </div>
 
@@ -420,53 +418,66 @@
                         <input type="text"
                                class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
                                placeholder="Tên công ty/Thương hiệu"
+                               name="CompanyName"
                                required />
                     </div>
 
-                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5">
-                        <option>Lĩnh vực</option>
-                        <option>Canada</option>
-                        <option>France</option>
-                        <option>Germany</option>
+                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5" name="BusinessField">
+                        <option value="0">Lĩnh vực</option>
+                        <option value="1">Giáo dục</option>
+                        <option value="2">Thẩm mỹ</option>
+                        <option value="3">Công nghệ</option>
+                        <option value="4">Thời trang</option>
+                        <option value="5">Gia dụng</option>
+                        <option value="6">B2B</option>
                     </select>
 
-                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5">
-                        <option>Chức vụ</option>
-                        <option>Canada</option>
-                        <option>France</option>
-                        <option>Germany</option>
+                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5" name="Title">
+                        <option value="0">Chức vụ</option>
+                        <option value="1">Chủ doanh nghiệp</option>
+                        <option value="2">CEO</option>
+                        <option value="3">Marketing Manager</option>
                     </select>
 
-                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5">
-                        <option>Kênh truyền thông hiện tại</option>
-                        <option>Canada</option>
-                        <option>France</option>
-                        <option>Germany</option>
+                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5" name="MediaChannel">
+                        <option value="0">Kênh truyền thông hiện tại</option>
+                        <option value="1">Facebook</option>
+                        <option value="2">Instagram</option>
+                        <option value="3">Tiktok</option>
+                        <option value="4">PR/ Báo chí</option>
+                        <option value="5">Website</option>
                     </select>
 
                     <div class="mb-5">
                         <input type="text"
                                class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
                                placeholder="Gắn link kênh truyền thông chính tại đây"
+                               name="MainMediaChannelLink"
                                required />
                     </div>
 
-                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5">
-                        <option>Kênh chuyển đổi hiện tại</option>
-                        <option>Canada</option>
-                        <option>France</option>
-                        <option>Germany</option>
+                    <select class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4 mb-5" name="ConversionMediaChannel">
+                        <option value="0">Kênh chuyển đổi hiện tại</option>
+                        <option value="1">Facebook</option>
+                        <option value="2">Instagram</option>
+                        <option value="3">Tiktok</option>
+                        <option value="4">Website</option>
+                        <option value="5">Điểm bán</option>
+                        <option value="6">Sàn TMDT</option>
                     </select>
 
                     <div class="mb-5">
                         <input type="text"
                                class="bg-gray-100 font-[600] text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 py-4"
                                placeholder="Gắn link kênh chuyển đổi chính tại đây"
+                               name="ConversionMediaChannelLink"
                                required />
                     </div>
 
-                    <button type="submit"
-                            class="inline-flex rounded-3xl px-6 py-2 text-xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-gradient-to-r from-[#031C72] to-[#3058E7]">
+                    <button type="button"
+                            class="inline-flex rounded-3xl px-6 py-2 text-xl font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-gradient-to-r from-[#031C72] to-[#3058E7]"
+                            id="survey-submit-btn"
+                    >
                         ĐĂNG KÝ NGAY
                     </button>
                     <a href="#" class="primary-color block">Privacy policy</a>
