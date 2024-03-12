@@ -1,6 +1,6 @@
 ﻿
 // collapse js
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll("[data-accordion-target]");
 
     buttons.forEach((button) => {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.setAttribute("aria-expanded", !expanded);
         });
     });
-});
+}); */
 
 $(document).ready(() => {
     // menu js
