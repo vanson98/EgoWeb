@@ -6,6 +6,7 @@ using TLS.Service.SurveyService;
 using TLS.ViewModels.Contact;
 using TLS.ViewModels.ServeyVm;
 using TLS.Web.Resources;
+using System.IO;
 
 namespace TLS.Web.Controllers
 {
@@ -62,6 +63,14 @@ namespace TLS.Web.Controllers
                     Message = "Đã có lỗi xảy ra, vui lòng bạn nhập lại!"
                 });
             }
+        }
+
+
+        public FileResult DownloadPrivacy()
+        {
+            byte[] fileBytes = System.IO.File.ReadAllBytes(@"./wwwroot/privacy/EGO Privacy Policy.pdf");
+            string fileName = "EGO Privacy Policy.pdf";
+            return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
         }
     }
 }
